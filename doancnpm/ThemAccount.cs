@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace doancnpm
 {
-    public partial class Form1 : Form
+    public partial class ThemAccount : Form
     {
-        public Form1()
+        public ThemAccount()
         {
             InitializeComponent();
         }

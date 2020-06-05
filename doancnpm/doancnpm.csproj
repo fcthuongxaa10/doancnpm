@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.12.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +49,125 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Acount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Acount.Designer.cs">
+      <DependentUpon>Acount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chamcong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chamcong.Designer.cs">
+      <DependentUpon>Chamcong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanhthu.Designer.cs">
+      <DependentUpon>Doanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HangHoa.Designer.cs">
+      <DependentUpon>HangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="laphoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laphoadon.Designer.cs">
+      <DependentUpon>laphoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien2.Designer.cs">
+      <DependentUpon>NhanVien2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="showadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showadmin.Designer.cs">
+      <DependentUpon>showadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowNV.Designer.cs">
+      <DependentUpon>ShowNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemAccount.Designer.cs">
+      <DependentUpon>ThemAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="themnhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themnhanvien.Designer.cs">
+      <DependentUpon>themnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timeskip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timeskip.Designer.cs">
+      <DependentUpon>timeskip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatehang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatehang.Designer.cs">
+      <DependentUpon>updatehang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acount.resx">
+      <DependentUpon>Acount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chamcong.resx">
+      <DependentUpon>Chamcong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doanhthu.resx">
+      <DependentUpon>Doanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HangHoa.resx">
+      <DependentUpon>HangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laphoadon.resx">
+      <DependentUpon>laphoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien2.resx">
+      <DependentUpon>NhanVien2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showadmin.resx">
+      <DependentUpon>showadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowNV.resx">
+      <DependentUpon>ShowNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemAccount.resx">
+      <DependentUpon>ThemAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +176,18 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="themnhanvien.resx">
+      <DependentUpon>themnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timeskip.resx">
+      <DependentUpon>timeskip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatehang.resx">
+      <DependentUpon>updatehang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +200,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-sieu-thi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sieuthi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\st.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sp-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kdj-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\op-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pi-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banhmi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-dep-de-ghep-anh-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-stock-market-business-logo-icon-design-vector-22926754.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-stock-market-business-logo-icon-design-vector-229267541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-stock-market-business-logo-icon-design-vector-229267542.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
