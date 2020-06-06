@@ -33,11 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.12.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,123 +58,132 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acount.cs">
+    <Compile Include="ChucNang\Acount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Acount.Designer.cs">
+    <Compile Include="ChucNang\Acount.Designer.cs">
       <DependentUpon>Acount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chamcong.cs">
+    <Compile Include="ChucNang\Chamcong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chamcong.Designer.cs">
+    <Compile Include="ChucNang\Chamcong.Designer.cs">
       <DependentUpon>Chamcong.cs</DependentUpon>
     </Compile>
-    <Compile Include="dangnhap.cs">
+    <Compile Include="ChucNang\dangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dangnhap.Designer.cs">
+    <Compile Include="ChucNang\dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin.cs">
+    <Compile Include="ChucNang\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
+    <Compile Include="ChucNang\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doanhthu.cs">
+    <Compile Include="DB\Account.cs" />
+    <Compile Include="DB\ChiTietHoaDon.cs" />
+    <Compile Include="DB\creadDB.cs" />
+    <Compile Include="DB\DonViTinh.cs" />
+    <Compile Include="DB\Group.cs" />
+    <Compile Include="DB\HoaDonBanHang.cs" />
+    <Compile Include="DB\MatHang.cs" />
+    <Compile Include="DB\USER.cs" />
+    <Compile Include="ChucNang\Doanhthu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doanhthu.Designer.cs">
+    <Compile Include="ChucNang\Doanhthu.Designer.cs">
       <DependentUpon>Doanhthu.cs</DependentUpon>
     </Compile>
-    <Compile Include="HangHoa.cs">
+    <Compile Include="ChucNang\HangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HangHoa.Designer.cs">
+    <Compile Include="ChucNang\HangHoa.Designer.cs">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="laphoadon.cs">
+    <Compile Include="ChucNang\laphoadon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="laphoadon.Designer.cs">
+    <Compile Include="ChucNang\laphoadon.Designer.cs">
       <DependentUpon>laphoadon.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien2.cs">
+    <Compile Include="Model1.cs" />
+    <Compile Include="ChucNang\NhanVien2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhanVien2.Designer.cs">
+    <Compile Include="ChucNang\NhanVien2.Designer.cs">
       <DependentUpon>NhanVien2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="showadmin.cs">
+    <Compile Include="ChucNang\showadmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="showadmin.Designer.cs">
+    <Compile Include="ChucNang\showadmin.Designer.cs">
       <DependentUpon>showadmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShowNV.cs">
+    <Compile Include="ChucNang\ShowNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShowNV.Designer.cs">
+    <Compile Include="ChucNang\ShowNV.Designer.cs">
       <DependentUpon>ShowNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemAccount.cs">
+    <Compile Include="ChucNang\ThemAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemAccount.Designer.cs">
+    <Compile Include="ChucNang\ThemAccount.Designer.cs">
       <DependentUpon>ThemAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="themnhanvien.cs">
+    <Compile Include="ChucNang\themnhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="themnhanvien.Designer.cs">
+    <Compile Include="ChucNang\themnhanvien.Designer.cs">
       <DependentUpon>themnhanvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="timeskip.cs">
+    <Compile Include="ChucNang\timeskip.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="timeskip.Designer.cs">
+    <Compile Include="ChucNang\timeskip.Designer.cs">
       <DependentUpon>timeskip.cs</DependentUpon>
     </Compile>
-    <Compile Include="updatehang.cs">
+    <Compile Include="ChucNang\updatehang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="updatehang.Designer.cs">
+    <Compile Include="ChucNang\updatehang.Designer.cs">
       <DependentUpon>updatehang.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Acount.resx">
+    <EmbeddedResource Include="ChucNang\Acount.resx">
       <DependentUpon>Acount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chamcong.resx">
+    <EmbeddedResource Include="ChucNang\Chamcong.resx">
       <DependentUpon>Chamcong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dangnhap.resx">
+    <EmbeddedResource Include="ChucNang\dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin.resx">
+    <EmbeddedResource Include="ChucNang\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doanhthu.resx">
+    <EmbeddedResource Include="ChucNang\Doanhthu.resx">
       <DependentUpon>Doanhthu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HangHoa.resx">
+    <EmbeddedResource Include="ChucNang\HangHoa.resx">
       <DependentUpon>HangHoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="laphoadon.resx">
+    <EmbeddedResource Include="ChucNang\laphoadon.resx">
       <DependentUpon>laphoadon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien2.resx">
+    <EmbeddedResource Include="ChucNang\NhanVien2.resx">
       <DependentUpon>NhanVien2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="showadmin.resx">
+    <EmbeddedResource Include="ChucNang\showadmin.resx">
       <DependentUpon>showadmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ShowNV.resx">
+    <EmbeddedResource Include="ChucNang\ShowNV.resx">
       <DependentUpon>ShowNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThemAccount.resx">
+    <EmbeddedResource Include="ChucNang\ThemAccount.resx">
       <DependentUpon>ThemAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -178,13 +196,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="themnhanvien.resx">
+    <EmbeddedResource Include="ChucNang\themnhanvien.resx">
       <DependentUpon>themnhanvien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="timeskip.resx">
+    <EmbeddedResource Include="ChucNang\timeskip.resx">
       <DependentUpon>timeskip.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="updatehang.resx">
+    <EmbeddedResource Include="ChucNang\updatehang.resx">
       <DependentUpon>updatehang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

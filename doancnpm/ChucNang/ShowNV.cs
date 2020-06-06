@@ -59,5 +59,12 @@ namespace doancnpm
         {
 
         }
+
+        private void ShowNV_Load(object sender, EventArgs e)
+        {
+            Model1 Db = new Model1();
+            var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh });
+            dataGridView1.DataSource = li.ToList();
+        }
     }
 }
