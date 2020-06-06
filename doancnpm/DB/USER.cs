@@ -12,16 +12,17 @@ namespace doancnpm.DB
   public  class USER
     {
         [Key]
-        public int ID { set; get; }
-        public string HoTen { get; set; }
-        public string SDT { get; set; }
-        public int SoNgayLam { get; set; }
-        public decimal LuongCB { get; set; }
-        public Boolean GioiTinh { get; set; }
-        public DateTime NgaySinh { get; set; }
-        public string Diachi { get; set; }
-        public decimal SoTienThuong { get; set; }
-        public decimal SoTienPhat { get; set; }
-        public virtual Account Account { get; set; }
+        public int ID;
+        public string HoTen;
+        public string SDT;
+        public int SoNgayLam;
+        public decimal LuongCB;
+        public Boolean GioiTinh;
+        public DateTime NgaySinh;
+        public string Diachi;
+        public decimal SoTienThuong;
+        public decimal SoTienPhat;
+       public virtual Account Account { get; set; }
+
     }
 }

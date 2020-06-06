@@ -12,9 +12,9 @@ namespace doancnpm.DB
  public class Group
     {
         [Key]
-        public int ID { set; get; }
-        public string TenGroup { get; set; }
-        public virtual ICollection<Account> Accounts { get; set; }
+        public int ID;
+        public string TenGroup;
+       public virtual ICollection<Account> Accounts { get; set; }
         public Group()
         {
             this.Accounts = new HashSet<Account>();

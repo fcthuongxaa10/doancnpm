@@ -12,17 +12,14 @@ namespace doancnpm.DB
    public class Account
     {
         [Key]
-        [Column(Order = 1)]
-        public int ID { set; get; }
-        [Key]
-        [Column(Order = 2)]
-        public int IDGroup { set; get; }
-        [Key]
-        [Column(Order = 3)]
-        public int IDuser { set; get; }
-        public string Username { get; set; }
-        public string PassWord { get; set; }
-        public DateTime NgayLap { get; set; }
+        public int ID;
+        public int IDGroup;
+        public int IDuser;
+        public string Username;
+        public string PassWord;
+        public DateTime NgayLap;
+        //[ForeignKey("IDGroup")]
+        //[ForeignKey("IDuser")]
         public virtual USER USER { get; set; }
         public virtual Group Group { get; set; }
         public virtual ICollection<HoaDonBanHang> HoaDonBanHangs { get; set; }
