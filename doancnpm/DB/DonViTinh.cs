@@ -12,9 +12,16 @@ namespace doancnpm.DB
    public class DonViTinh
     {
         [Key]
-        public int IDDonViTinh;
-        public string TenDonViTinh;
+        [Required]
+        public int IDDonViTinh { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string TenDonViTinh { get; set; }
         [ForeignKey("IDDonViTinh")]
-        public virtual MatHang MatHang { get; set; }
+        public virtual ICollection<MatHang>  MatHang { get; set; }
+        public DonViTinh()
+        {
+            this.MatHang = new HashSet<MatHang>();
+        }
     }
 }

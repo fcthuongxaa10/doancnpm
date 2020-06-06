@@ -12,13 +12,19 @@ namespace doancnpm.DB
    public class MatHang
     {
         [Key]
-        public string MaHang;
-        public string TenHang;
-        public int SoLuongSp;
-        public decimal Gia;
-        public int IDDonViTinh;
-        public DateTime NgayNhapKho;
-       // [ForeignKey("IDDonViTinh")]
+        [Required]
+        [StringLength(50)]
+        public string MaHang { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string TenHang { get; set; }
+        [Required]
+        public int SoLuongSp { get; set; }
+        public decimal Gia { get; set; }
+        [Required]
+        public int IDDonViTinh { get; set; }
+        [Required]
+        public DateTime NgayNhapKho { get; set; }
         public virtual ICollection<DonViTinh> DonViTinhs  { set; get; }
         public MatHang()
         {

@@ -12,12 +12,17 @@ namespace doancnpm.DB
   public  class HoaDonBanHang
     {
         [Key]
-        public string MaHD;
-        public DateTime NgayLapHD;
-        public decimal TongTien;
-        public int IDNV;
-        [ForeignKey("IDNV")]
+        [Required]
+        [StringLength(50)]
+        public string MaHD { set; get; }
+        [Required]
+        public DateTime NgayLapHD { set; get; }
+        [Required]
+        public decimal TongTien { set; get; }
+        [Required]
+        public int IDNV { set; get; }
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { set; get; }
+        [ForeignKey("IDNV")]
         public virtual Account Account { get; set; }
         public HoaDonBanHang()
         {

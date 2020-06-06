@@ -11,22 +11,32 @@ namespace doancnpm.DB
     [Table("Account")]
    public class Account
     {
+      
         [Key]
-        public int ID;
-        public int IDGroup;
-        public int IDuser;
-        public string Username;
-        public string PassWord;
-        public DateTime NgayLap;
-        //[ForeignKey("IDGroup")]
-        //[ForeignKey("IDuser")]
-        public virtual USER USER { get; set; }
-        public virtual Group Group { get; set; }
+        [Required]
+        public int ID { get; set; }
         public virtual ICollection<HoaDonBanHang> HoaDonBanHangs { get; set; }
         public Account()
         {
             this.HoaDonBanHangs = new HashSet<HoaDonBanHang>();
         }
+        [Required]
+        public int IDGroup { get; set; }
+        [Required]
+        public int IDuser { get; set; }
+        [Required]          // cái này là không được phép null
+        [StringLength(255)]  // cái này là độ dài tối đa  là 255 ký tự (mạng anh lag quá nên làm tiếp đi mai anh review nha)
+        public string Username { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string PassWord { get; set; }
+        [Required]
+        public DateTime NgayLap { get; set; }
+        [ForeignKey("IDuser")]
+        public virtual USER USER { get; set; }
+        [ForeignKey("IDGroup")]
+        public virtual Group Group { get; set; }
+       
 
     }
 }
