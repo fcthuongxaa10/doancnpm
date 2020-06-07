@@ -12,6 +12,7 @@ namespace doancnpm.DB
     public class USER
     {
         //abc
+        //xyz
 
         [Key]
         [Required]
