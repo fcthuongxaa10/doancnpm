@@ -115,6 +115,7 @@
       <DependentUpon>NhanVien2.cs</DependentUpon>
     </Compile>
     <Compile Include="Model2.cs" />
+    <Compile Include="NoteDungGitSauXoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ChucNang\showadmin.cs">
       <SubType>Form</SubType>
