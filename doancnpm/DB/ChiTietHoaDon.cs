@@ -26,8 +26,8 @@ namespace doancnpm.DB
         public string SoLuong { get; set; }
         [Required]
         public decimal TongTien { get; set; }
-        public virtual ICollection<MatHang> MatHangs { set; get; }
         public virtual HoaDonBanHang HoaDonBanHang { get; set; }
+        public virtual ICollection<MatHang> MatHangs { set; get; }
         public ChiTietHoaDon()
         {
             this.MatHangs = new HashSet<MatHang>();

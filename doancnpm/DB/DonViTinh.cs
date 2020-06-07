@@ -17,7 +17,6 @@ namespace doancnpm.DB
         [Required]
         [StringLength(50)]
         public string TenDonViTinh { get; set; }
-        [ForeignKey("IDDonViTinh")]
         public virtual ICollection<MatHang>  MatHang { get; set; }
         public DonViTinh()
         {

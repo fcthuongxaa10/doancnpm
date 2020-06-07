@@ -25,6 +25,7 @@ namespace doancnpm.DB
         public int IDDonViTinh { get; set; }
         [Required]
         public DateTime NgayNhapKho { get; set; }
+        [ForeignKey("IDDonViTinh")]
         public virtual ICollection<DonViTinh> DonViTinhs  { set; get; }
         public MatHang()
         {
