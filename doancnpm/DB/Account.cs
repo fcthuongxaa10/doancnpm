@@ -11,17 +11,15 @@ namespace doancnpm.DB
     [Table("Account")]
     public class Account
     {
-
-
+      //chạy lại coi thử
+      // được chưa mà nói nì t để user là q h 1 1 vs account m suả nlaij qh 1 n ci rua
+      // ông tạo csdl như ri là sai hết r
+      //không đúng
+      //làm dễ sai
+      //
         [Key]
         [Required]
         public int ID { get; set; }
-
-        public virtual ICollection<HoaDonBanHang> HoaDonBanHangs { get; set; }
-        public Account()
-        {
-            this.HoaDonBanHangs = new HashSet<HoaDonBanHang>();
-        }
         [Required]
         public int IDGroup { get; set; }
         [Required]
@@ -37,7 +35,12 @@ namespace doancnpm.DB
         [ForeignKey("IDuser")]
         public virtual USER USER { get; set; }
         [ForeignKey("IDGroup")]
-        public virtual Group Group { get; set; }//lỗi chỏ mô
+        public virtual Group Group { get; set; }
+        public virtual ICollection<HoaDonBanHang> HoaDonBanHangs { get; set; }
+        public Account()
+        {
+            this.HoaDonBanHangs = new HashSet<HoaDonBanHang>();
+        }
     }
 }
 

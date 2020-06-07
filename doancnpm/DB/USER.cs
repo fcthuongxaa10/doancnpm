@@ -9,11 +9,8 @@ using System.Threading.Tasks;
 namespace doancnpm.DB
 {
     [Table("USER")]
-    public class USER
+  public  class USER
     {
-        //abc
-        //xyz
-
         [Key]
         [Required]
         public int IDuser { set; get; }
