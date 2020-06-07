@@ -10,7 +10,11 @@ namespace doancnpm.DB
 {
     [Table("USER")]
   public  class USER
-    {
+    {//sai đâu m đợi 1 p
+        public USER()
+        {
+            this.Account = new HashSet<Account>();
+        }
         [Key]
         [Required]          
         public int ID { set; get; }
@@ -31,7 +35,8 @@ namespace doancnpm.DB
         public string Diachi { set; get; }
         public decimal SoTienThuong { set; get; }
         public decimal SoTienPhat { set; get; }
-        public virtual Account Account { get; set; }
-
+        
+        public virtual ICollection<Account> Account { get; set; }
+        //tạo cái mới cho nhanh
     }
 }

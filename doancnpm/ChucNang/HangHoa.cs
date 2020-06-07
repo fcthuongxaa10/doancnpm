@@ -15,6 +15,14 @@ namespace doancnpm
         public HangHoa()
         {
             InitializeComponent();
+            Model1 db = new Model1();
+            var li = db.MatHangs.Select(p => new { p.MaHang, p.TenHang });
+            dataGridView1.DataSource = li.ToList();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }

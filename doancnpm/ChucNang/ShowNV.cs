@@ -1,4 +1,5 @@
-﻿using System;
+﻿using doancnpm.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,10 +62,14 @@ namespace doancnpm
         }
 
         private void ShowNV_Load(object sender, EventArgs e)
-        {
+        {//cái ni là tạo db sai cmnr  để coi tí// 
+
             Model1 Db = new Model1();
-            var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh });
-            dataGridView1.DataSource = li.ToList();
+                    var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh });
+                    dataGridView1.DataSource = li.ToList();
+                
+            //
+            
         }
     }
 }

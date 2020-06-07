@@ -11,10 +11,16 @@ namespace doancnpm.DB
     [Table("Account")]
    public class Account
     {
-      
+      //chạy lại coi thử
+      // được chưa mà nói nì t để user là q h 1 1 vs account m suả nlaij qh 1 n ci rua
+      // ông tạo csdl như ri là sai hết r
+      //không đúng
+      //làm dễ sai
+      //
         [Key]
         [Required]
         public int ID { get; set; }
+
         public virtual ICollection<HoaDonBanHang> HoaDonBanHangs { get; set; }
         public Account()
         {
@@ -25,7 +31,7 @@ namespace doancnpm.DB
         [Required]
         public int IDuser { get; set; }
         [Required]          // cái này là không được phép null
-        [StringLength(255)]  // cái này là độ dài tối đa  là 255 ký tự (mạng anh lag quá nên làm tiếp đi mai anh review nha)
+        [StringLength(255)]  // cái này là độ dài tối đa  là 255 ký tự 
         public string Username { get; set; }
         [Required]
         [StringLength(50)]
@@ -35,8 +41,6 @@ namespace doancnpm.DB
         [ForeignKey("IDuser")]
         public virtual USER USER { get; set; }
         [ForeignKey("IDGroup")]
-        public virtual Group Group { get; set; }
-       
-
+        public virtual Group Group { get; set; }//lỗi chỏ mô
     }
 }
