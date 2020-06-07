@@ -31,12 +31,12 @@ namespace doancnpm.DB
         public string Diachi { set; get; }
         public decimal SoTienThuong { set; get; }
         public decimal SoTienPhat { set; get; }
-        
-        //public virtual ICollection<Account> Account { get; set; }
-        //public USER()
-        //{
-        //    this.Account = new HashSet<Account>();
-        //}
-          public virtual Account Account { get; set; }
+
+        public virtual ICollection<Account> Account { get; set; }
+        public USER()
+        {
+            this.Account = new HashSet<Account>();
+        }
+ 
     }
 }

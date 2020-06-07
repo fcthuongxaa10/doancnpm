@@ -62,19 +62,42 @@ namespace codefirt
                 SoLuong = "3",
                 TongTien = 1000000
             });
-            context.HoaDonBanHangs.Add(new HoaDonBanHang
+           
+            context.USERs.Add(new USER
             {
-                MaHD = "1",
-             NgayLapHD = new DateTime(2020,3,12),
-             TongTien = 300000,
-             IDNV = 111,
+                ID = 102180,
+                HoTen = "Lê Trường Sơn",
+                SDT = "0326416995",
+                SoNgayLam = 0,
+                LuongCB = 2500000,
+                GioiTinh = true,
+                NgaySinh = new DateTime(1999, 2, 2),
+                Diachi = "quảng trị",
+                SoTienPhat = 0,
+                SoTienThuong = 0,
             });
-            context.HoaDonBanHangs.Add(new HoaDonBanHang
+            context.USERs.Add(new USER
             {
-                MaHD = "2",
-                NgayLapHD = new DateTime(2020, 12, 3),
-                TongTien = 150000,
-                IDNV = 112,
+                ID = 102181,
+                HoTen = "Lê Trường Quân",
+                SDT = "0393415991",
+                SoNgayLam = 0,
+                LuongCB = 2500000,
+                GioiTinh = false,
+                NgaySinh = new DateTime(1999, 3, 3),
+                Diachi = "quảng trị",
+                SoTienPhat = 0,
+                SoTienThuong = 0,
+            });
+            context.Groups.Add(new Group
+            {
+                ID = 1,
+                TenGroup = "ADmin"
+            });
+            context.Groups.Add(new Group
+            {
+                ID = 2,
+                TenGroup = "NhanVien"
             });
             context.Accounts.Add(new Account
             {
@@ -94,42 +117,21 @@ namespace codefirt
                 PassWord = "123456",
                 NgayLap = new DateTime(2020, 4, 12),
             });
-            context.Groups.Add(new Group
+            context.HoaDonBanHangs.Add(new HoaDonBanHang
             {
-                ID = 1,
-               TenGroup = "ADmin"
+                MaHD = "1",
+                NgayLapHD = new DateTime(2020, 3, 12),
+                TongTien = 300000,
+                IDNV = 111,
             });
-            context.Groups.Add(new Group
+            context.HoaDonBanHangs.Add(new HoaDonBanHang
             {
-                ID = 2,
-                TenGroup = "NhanVien"
+                MaHD = "2",
+                NgayLapHD = new DateTime(2020, 12, 3),
+                TongTien = 150000,
+                IDNV = 112,
             });
-            context.USERs.Add(new USER
-            {
-                ID = 102180,
-                HoTen = "Lê Trường Sơn",
-                SDT = "0326416995",
-                SoNgayLam = 0,
-                LuongCB =2500000,
-                GioiTinh = true,
-                NgaySinh =new DateTime(1999,2,2),
-                Diachi = "quảng trị",
-                SoTienPhat =0,
-                SoTienThuong=0,
-            });
-            context.USERs.Add(new USER
-            {
-                ID = 102181,
-                HoTen = "Lê Trường Quân" ,
-                SDT = "0393415991",
-                SoNgayLam = 0,
-                LuongCB = 2500000,
-                GioiTinh =false,
-                NgaySinh = new DateTime(1999, 3, 3),
-                Diachi = "quảng trị",
-                SoTienPhat = 0,
-                SoTienThuong = 0,
-            });
+
         }
 
     }
