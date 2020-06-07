@@ -11,7 +11,7 @@ namespace doancnpm.DB
     [Table("HoaDonBanHang")]
   public  class HoaDonBanHang
     {
-        //xyz
+        //xyz//hdjf
         [Key]
         [Required]
         [StringLength(50)]

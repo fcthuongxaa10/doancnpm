@@ -53,14 +53,14 @@ namespace codefirt
                 MaHD = "1",
                 MaHang = "110123a",
                 SoLuong = "3",
-                TongTien =1000000
+                //TongTien =1000000
             });
             context.ChiTietHoaDons.Add(new ChiTietHoaDon
             {
                 MaHD = "2",
                 MaHang = "110431a",
                 SoLuong = "3",
-                TongTien = 1000000
+                //TongTien = 1000000
             });
             context.HoaDonBanHangs.Add(new HoaDonBanHang
             {
@@ -96,17 +96,17 @@ namespace codefirt
             });
             context.Groups.Add(new Group
             {
-                ID = 1,
+                IDGroup= 1,
                TenGroup = "ADmin"
             });
             context.Groups.Add(new Group
             {
-                ID = 2,
+                IDGroup = 2,
                 TenGroup = "NhanVien"
             });
             context.USERs.Add(new USER
             {
-                ID = 102180,
+                IDuser = 102180,
                 HoTen = "Lê Trường Sơn",
                 SDT = "0326416995",
                 SoNgayLam = 0,
@@ -119,7 +119,7 @@ namespace codefirt
             });
             context.USERs.Add(new USER
             {
-                ID = 102181,
+                IDuser= 102181,
                 HoTen = "Lê Trường Quân" ,
                 SDT = "0393415991",
                 SoNgayLam = 0,
