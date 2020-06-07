@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace doancnpm.DB
 {
-   [Table("Group")]
- public class Group
+    [Table("Group")]
+    public class Group
     {
         [Key]
         [Required]
-        public int ID { set; get; }
+        public int IDGroup { set; get; }
         [Required]
         [StringLength(255)]
         public string TenGroup { set; get; }

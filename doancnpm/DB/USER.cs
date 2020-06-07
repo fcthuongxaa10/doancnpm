@@ -9,15 +9,12 @@ using System.Threading.Tasks;
 namespace doancnpm.DB
 {
     [Table("USER")]
-  public  class USER
+    public class USER
     {//sai đâu m đợi 1 p
-        public USER()
-        {
-            this.Account = new HashSet<Account>();
-        }
+
         [Key]
-        [Required]          
-        public int ID { set; get; }
+        [Required]
+        public int IDuser { set; get; }
         [Required]
         [StringLength(255)]
         public string HoTen { set; get; }
@@ -35,8 +32,9 @@ namespace doancnpm.DB
         public string Diachi { set; get; }
         public decimal SoTienThuong { set; get; }
         public decimal SoTienPhat { set; get; }
-        
-        public virtual ICollection<Account> Account { get; set; }
+
+        public virtual ICollection<Account> Accounts { get; set; }
         //tạo cái mới cho nhanh
+
     }
 }

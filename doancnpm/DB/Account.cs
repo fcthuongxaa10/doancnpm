@@ -9,14 +9,10 @@ using System.Threading.Tasks;
 namespace doancnpm.DB
 {
     [Table("Account")]
-   public class Account
+    public class Account
     {
-      //chạy lại coi thử
-      // được chưa mà nói nì t để user là q h 1 1 vs account m suả nlaij qh 1 n ci rua
-      // ông tạo csdl như ri là sai hết r
-      //không đúng
-      //làm dễ sai
-      //
+
+
         [Key]
         [Required]
         public int ID { get; set; }
@@ -44,3 +40,4 @@ namespace doancnpm.DB
         public virtual Group Group { get; set; }//lỗi chỏ mô
     }
 }
+
