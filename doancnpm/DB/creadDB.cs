@@ -11,9 +11,9 @@ using doancnpm.DB;
 
 namespace codefirt
 {
-    public class creadDB : CreateDatabaseIfNotExists<Model1>
+    public class creadDB : CreateDatabaseIfNotExists<Model2>
     {
-        protected override void Seed(Model1 context)
+        protected override void Seed(Model2 context)
         {
             context.DonViTinhs.Add(new DonViTinh
             {
