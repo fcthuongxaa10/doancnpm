@@ -10,7 +10,8 @@ namespace doancnpm.DB
 {
     [Table("USER")]
     public class USER
-    {//sai đâu m đợi 1 p
+    {
+        //abc
 
         [Key]
         [Required]
