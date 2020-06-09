@@ -41,7 +41,6 @@ namespace doancnpm
                     {
                         string id = r[0].Cells["id"].Value.ToString();
                         themnhanvien f = new themnhanvien(id);
-                        //f.D += new Form2.dele(Show);
                         f.ShowDialog();
                     }
                     else

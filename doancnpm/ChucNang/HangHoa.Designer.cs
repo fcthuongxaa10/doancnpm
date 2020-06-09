@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonsearchacc = new FontAwesome.Sharp.IconButton();
             this.buttonupdateacc = new FontAwesome.Sharp.IconButton();
             this.buttondeleteacc = new FontAwesome.Sharp.IconButton();
             this.buttonaddacc = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +53,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(706, 514);
             this.panel1.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(42, 88);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(601, 395);
+            this.dataGridView1.TabIndex = 21;
             // 
             // textBox1
             // 
@@ -84,6 +92,7 @@
             this.buttonsearchacc.Text = "SEARCH";
             this.buttonsearchacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonsearchacc.UseVisualStyleBackColor = false;
+            this.buttonsearchacc.Click += new System.EventHandler(this.buttonsearchacc_Click);
             // 
             // buttonupdateacc
             // 
@@ -130,6 +139,7 @@
             this.buttondeleteacc.Text = "DELETE";
             this.buttondeleteacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttondeleteacc.UseVisualStyleBackColor = false;
+            this.buttondeleteacc.Click += new System.EventHandler(this.buttondeleteacc_Click);
             // 
             // buttonaddacc
             // 
@@ -153,14 +163,7 @@
             this.buttonaddacc.Text = "ADD";
             this.buttonaddacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonaddacc.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 88);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(601, 395);
-            this.dataGridView1.TabIndex = 21;
+            this.buttonaddacc.Click += new System.EventHandler(this.buttonaddacc_Click);
             // 
             // HangHoa
             // 
