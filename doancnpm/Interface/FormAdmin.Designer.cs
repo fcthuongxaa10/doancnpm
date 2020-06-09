@@ -72,7 +72,7 @@
             this.panelQLAC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.panelQLAC.Controls.Add(this.button1);
             this.panelQLAC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQLAC.Location = new System.Drawing.Point(0, 417);
+            this.panelQLAC.Location = new System.Drawing.Point(0, 392);
             this.panelQLAC.Name = "panelQLAC";
             this.panelQLAC.Size = new System.Drawing.Size(200, 50);
             this.panelQLAC.TabIndex = 10;
@@ -104,7 +104,7 @@
             this.btQuanliaccount.IconColor = System.Drawing.Color.Black;
             this.btQuanliaccount.IconSize = 16;
             this.btQuanliaccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btQuanliaccount.Location = new System.Drawing.Point(0, 380);
+            this.btQuanliaccount.Location = new System.Drawing.Point(0, 355);
             this.btQuanliaccount.Name = "btQuanliaccount";
             this.btQuanliaccount.Rotation = 0D;
             this.btQuanliaccount.Size = new System.Drawing.Size(200, 37);
@@ -127,7 +127,7 @@
             this.btDoanhthu.IconColor = System.Drawing.Color.Black;
             this.btDoanhthu.IconSize = 16;
             this.btDoanhthu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btDoanhthu.Location = new System.Drawing.Point(0, 343);
+            this.btDoanhthu.Location = new System.Drawing.Point(0, 318);
             this.btDoanhthu.Name = "btDoanhthu";
             this.btDoanhthu.Rotation = 0D;
             this.btDoanhthu.Size = new System.Drawing.Size(200, 37);
@@ -142,7 +142,7 @@
             this.panelQLHH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.panelQLHH.Controls.Add(this.btThemmathang);
             this.panelQLHH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQLHH.Location = new System.Drawing.Point(0, 293);
+            this.panelQLHH.Location = new System.Drawing.Point(0, 268);
             this.panelQLHH.Name = "panelQLHH";
             this.panelQLHH.Size = new System.Drawing.Size(200, 50);
             this.panelQLHH.TabIndex = 7;
@@ -174,7 +174,7 @@
             this.btQuanlihanghoa.IconColor = System.Drawing.Color.Black;
             this.btQuanlihanghoa.IconSize = 16;
             this.btQuanlihanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btQuanlihanghoa.Location = new System.Drawing.Point(0, 256);
+            this.btQuanlihanghoa.Location = new System.Drawing.Point(0, 231);
             this.btQuanlihanghoa.Name = "btQuanlihanghoa";
             this.btQuanlihanghoa.Rotation = 0D;
             this.btQuanlihanghoa.Size = new System.Drawing.Size(200, 37);
@@ -190,7 +190,7 @@
             this.panelQLNV.Controls.Add(this.btThemnhanvien);
             this.panelQLNV.Controls.Add(this.btDanhsachnhavien);
             this.panelQLNV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQLNV.Location = new System.Drawing.Point(0, 174);
+            this.panelQLNV.Location = new System.Drawing.Point(0, 149);
             this.panelQLNV.Name = "panelQLNV";
             this.panelQLNV.Size = new System.Drawing.Size(200, 82);
             this.panelQLNV.TabIndex = 5;
@@ -236,7 +236,7 @@
             this.btQuanlinhanhvien.IconColor = System.Drawing.Color.Black;
             this.btQuanlinhanhvien.IconSize = 16;
             this.btQuanlinhanhvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btQuanlinhanhvien.Location = new System.Drawing.Point(0, 137);
+            this.btQuanlinhanhvien.Location = new System.Drawing.Point(0, 112);
             this.btQuanlinhanhvien.Name = "btQuanlinhanhvien";
             this.btQuanlinhanhvien.Rotation = 0D;
             this.btQuanlinhanhvien.Size = new System.Drawing.Size(200, 37);
@@ -259,7 +259,7 @@
             this.btThongtincanhan.IconColor = System.Drawing.Color.Black;
             this.btThongtincanhan.IconSize = 16;
             this.btThongtincanhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThongtincanhan.Location = new System.Drawing.Point(0, 100);
+            this.btThongtincanhan.Location = new System.Drawing.Point(0, 75);
             this.btThongtincanhan.Name = "btThongtincanhan";
             this.btThongtincanhan.Rotation = 0D;
             this.btThongtincanhan.Size = new System.Drawing.Size(200, 37);
@@ -274,26 +274,25 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(200, 100);
+            this.panelLogo.Size = new System.Drawing.Size(200, 75);
             this.panelLogo.TabIndex = 1;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(866, 100);
+            this.panel3.Size = new System.Drawing.Size(866, 75);
             this.panel3.TabIndex = 1;
             // 
-            // Form1
+            // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 543);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelMenu);
-            this.Name = "Form1";
+            this.Name = "FormAdmin";
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);
             this.panelQLAC.ResumeLayout(false);

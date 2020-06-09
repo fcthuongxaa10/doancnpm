@@ -192,6 +192,9 @@
     <EmbeddedResource Include="ChucNang\ThemAccount.resx">
       <DependentUpon>ThemAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
