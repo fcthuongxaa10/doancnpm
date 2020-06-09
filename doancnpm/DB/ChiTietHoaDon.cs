@@ -8,29 +8,20 @@ using System.Threading.Tasks;
 
 namespace doancnpm.DB
 {
-    [Table("chiTietHoaDon")]
-   public class ChiTietHoaDon
+    //abc
+    [Table("ChiTietHoaDon")]
+    public class ChiTietHoaDon
     {
-        [Key]
-        [Column(Order = 1)]
-        [Required]
-        [StringLength(50)]
-        public string MaHD;
-        [Key]
-        [Column(Order = 2)]
-        [Required]
-        [StringLength(50)]
+
+        [Key, Column(Order = 0)]
         public string MaHang { get; set; }
-        [Required]
-        [StringLength(50)]
+
+        [Key, Column(Order = 1)]
+        public string MaHD { get; set; }
         public string SoLuong { get; set; }
-        [Required]
-        public decimal TongTien { get; set; }
+   
+
         public virtual HoaDonBanHang HoaDonBanHang { get; set; }
-        public virtual ICollection<MatHang> MatHangs { set; get; }
-        public ChiTietHoaDon()
-        {
-            this.MatHangs = new HashSet<MatHang>();
-        }
+        public virtual MatHang MatHang { get; set; }
     }
 }

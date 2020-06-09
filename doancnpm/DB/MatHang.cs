@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace doancnpm.DB
 {
     [Table("MatHang")]
-   public class MatHang
+    public class MatHang
     {
         [Key]
         [Required]
@@ -21,15 +21,15 @@ namespace doancnpm.DB
         [Required]
         public int SoLuongSp { get; set; }
         public decimal Gia { get; set; }
-        [Required]
-        public int IDDonViTinh { get; set; }
+     
         [Required]
         public DateTime NgayNhapKho { get; set; }
+
+        public virtual ICollection<ChiTietHoaDon> HoaDonBanHangs { get; set; }
+        [Required]
+        public int IDDonViTinh { get; set; }
         [ForeignKey("IDDonViTinh")]
-        public virtual ICollection<DonViTinh> DonViTinhs  { set; get; }
-        public MatHang()
-        {
-            this.DonViTinhs = new HashSet<DonViTinh>();
-        }
+        public virtual DonViTinh DonViTinh { get; set; }
+    
     }
 }

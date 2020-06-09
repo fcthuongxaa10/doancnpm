@@ -11,6 +11,7 @@ namespace doancnpm.DB
     [Table("HoaDonBanHang")]
   public  class HoaDonBanHang
     {
+        //xyz//hdjf
         [Key]
         [Required]
         [StringLength(50)]
@@ -20,13 +21,11 @@ namespace doancnpm.DB
         [Required]
         public decimal TongTien { set; get; }
         [Required]
+       
+        public virtual ICollection<ChiTietHoaDon> MatHangs { set; get; }
         public int IDNV { set; get; }
-        public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { set; get; }
         [ForeignKey("IDNV")]
         public virtual Account Account { get; set; }
-        public HoaDonBanHang()
-        {
-            this.ChiTietHoaDons = new HashSet<ChiTietHoaDon>();
-        }
+     
     }
 }

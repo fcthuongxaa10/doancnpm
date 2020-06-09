@@ -11,9 +11,9 @@ using doancnpm.DB;
 
 namespace codefirt
 {
-    public class creadDB : CreateDatabaseIfNotExists<Model1>
+    public class creadDB : CreateDatabaseIfNotExists<Model2>
     {
-        protected override void Seed(Model1 context)
+        protected override void Seed(Model2 context)
         {
             context.DonViTinhs.Add(new DonViTinh
             {
@@ -53,14 +53,14 @@ namespace codefirt
                 MaHD = "1",
                 MaHang = "110123a",
                 SoLuong = "3",
-                TongTien =1000000
+                //TongTien =1000000
             });
             context.ChiTietHoaDons.Add(new ChiTietHoaDon
             {
                 MaHD = "2",
                 MaHang = "110431a",
                 SoLuong = "3",
-                TongTien = 1000000
+                //TongTien = 1000000
             });
            
             context.USERs.Add(new USER
@@ -131,7 +131,32 @@ namespace codefirt
                 TongTien = 150000,
                 IDNV = 112,
             });
-
+            context.USERs.Add(new USER
+            {
+                IDuser = 102180,
+                HoTen = "Lê Trường Sơn",
+                SDT = "0326416995",
+                SoNgayLam = 0,
+                LuongCB =2500000,
+                GioiTinh = true,
+                NgaySinh =new DateTime(1999,2,2),
+                Diachi = "quảng trị",
+                SoTienPhat =0,
+                SoTienThuong=0,
+            });
+            context.USERs.Add(new USER
+            {
+                IDuser= 102181,
+                HoTen = "Lê Trường Quân" ,
+                SDT = "0393415991",
+                SoNgayLam = 0,
+                LuongCB = 2500000,
+                GioiTinh =false,
+                NgaySinh = new DateTime(1999, 3, 3),
+                Diachi = "quảng trị",
+                SoTienPhat = 0,
+                SoTienThuong = 0,
+            });
         }
 
     }

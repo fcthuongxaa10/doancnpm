@@ -12,8 +12,8 @@ namespace doancnpm.DB
   public  class USER
     {
         [Key]
-        [Required]          
-        public int ID { set; get; }
+        [Required]
+        public int IDuser { set; get; }
         [Required]
         [StringLength(255)]
         public string HoTen { set; get; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace doancnpm.DB
 {
     [Table("DonViTinh")]
-   public class DonViTinh
+    public class DonViTinh
     {
         [Key]
         [Required]
@@ -17,10 +17,12 @@ namespace doancnpm.DB
         [Required]
         [StringLength(50)]
         public string TenDonViTinh { get; set; }
-        public virtual ICollection<MatHang>  MatHang { get; set; }
+
+        public virtual ICollection<MatHang> MatHangs { get; set; }
         public DonViTinh()
         {
-            this.MatHang = new HashSet<MatHang>();
+            this.MatHangs = new HashSet<MatHang>();
         }
+
     }
 }
