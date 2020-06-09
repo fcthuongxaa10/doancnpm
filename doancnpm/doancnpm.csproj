@@ -114,7 +114,7 @@
     <Compile Include="ChucNang\NhanVien2.Designer.cs">
       <DependentUpon>NhanVien2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model2.cs" />
+    <Compile Include="Model1.cs" />
     <Compile Include="NoteDungGitSauXoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ChucNang\showadmin.cs">

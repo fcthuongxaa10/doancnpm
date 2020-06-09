@@ -5,7 +5,7 @@ namespace doancnpm.DB
     using System.Data.Entity;
     using System.Linq;
 
-    public class Model2 : DbContext
+    public class Model1 : DbContext
     {//abc
         // Your context has been configured to use a 'Model2' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
@@ -14,10 +14,10 @@ namespace doancnpm.DB
         // If you wish to target a different database and/or database provider, modify the 'Model2' 
         // connection string in the application configuration file.
       
-            public Model2()
-            : base("name=Model2")
+            public Model1()
+            : base("name=Model1")
         {
-                Database.SetInitializer<Model2>(new creadDB());
+                Database.SetInitializer<Model1>(new creadDB());
             }
         public virtual DbSet<MatHang> MatHangs { set; get; }
         public virtual DbSet<DonViTinh> DonViTinhs { set; get; }

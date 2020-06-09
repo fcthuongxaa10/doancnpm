@@ -1,4 +1,5 @@
-﻿using System;
+﻿using doancnpm.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,7 @@ namespace doancnpm
         {
             InitializeComponent();
             Model1 db = new Model1();
-            var li = db.MatHangs.Select(p => new { p.MaHang, p.TenHang });
+            var li = db.MatHangs.Select(p => new { p.MaHang, p.TenHang,p.IDDonViTinh,p.SoLuongSp,p.Gia,p.NgayNhapKho});
             dataGridView1.DataSource = li.ToList();
         }
     }

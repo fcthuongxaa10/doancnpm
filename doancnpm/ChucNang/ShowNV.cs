@@ -22,8 +22,10 @@ namespace doancnpm
         {
             try
             {
-                themnhanvien f = new themnhanvien("");
+                themnhanvien f = new themnhanvien(Convert.ToInt32(null));
+                f.D += new themnhanvien.dele(Show);
                 f.ShowDialog();
+
             }
             catch (Exception)
             {
@@ -39,9 +41,9 @@ namespace doancnpm
                 {
                     if (r.Count == 1)
                     {
-                        string id = r[0].Cells["id"].Value.ToString();
+                        int id =Convert.ToInt32(r[0].Cells["id"].Value.ToString());
                         themnhanvien f = new themnhanvien(id);
-                        //f.D += new Form2.dele(Show);
+                    f.D += new themnhanvien.dele(Show);
                         f.ShowDialog();
                     }
                     else
@@ -55,21 +57,60 @@ namespace doancnpm
                     return;
                 }
             }
+        public void Show()
+        {
+            Model1 DB = new Model1();
+            var li = DB.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+            dataGridView1.DataSource = li.ToList();
+        }
 
         private void buttonxoanv_Click(object sender, EventArgs e)
         {
+         
+                DataGridViewSelectedRowCollection r = dataGridView1.SelectedRows;
+                Model1 db = new Model1();
+                try
+                {
+                    foreach (USER i in db.USERs)
+                    {
+                        foreach (DataGridViewRow j in r)
+                        {
+                            if (i.ID == Convert.ToInt32( j.Cells["ID"].Value.ToString()))
+                            {
+                                USER t = i;
+                                db.USERs.Remove(t);
+                            }
 
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Xin Kiem Tra Lai");
+                }
+                db.SaveChanges();
+                var li1 = db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+                dataGridView1.DataSource = li1.ToList();
+          
         }
 
         private void ShowNV_Load(object sender, EventArgs e)
-        {//cái ni là tạo db sai cmnr  để coi tí// 
-
-            Model1 Db = new Model1();
-                    var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh });
+        {
+                    Model1 Db = new Model1();
+                    var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh,p.SoNgayLam,p.SoTienThuong,p.SoTienPhat,p.Diachi });
                     dataGridView1.DataSource = li.ToList();
-                
-            //
-            
+        }
+
+        private void buttonsearch_Click(object sender, EventArgs e)
+        {
+            Model1 DB = new Model1();
+            var li = DB.USERs.Where(p=> p.HoTen== txtsearch.Text   )
+                   .Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+            dataGridView1.DataSource = li.ToList();
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("Sinh Viên Không Có Trong Lớp");
+            }
         }
     }
 }

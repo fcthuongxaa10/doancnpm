@@ -11,9 +11,9 @@ using doancnpm.DB;
 
 namespace codefirt
 {
-    public class creadDB : CreateDatabaseIfNotExists<Model2>
+    public class creadDB : CreateDatabaseIfNotExists<Model1>
     {
-        protected override void Seed(Model2 context)
+        protected override void Seed(Model1 context)
         {
             context.DonViTinhs.Add(new DonViTinh
             {
@@ -91,12 +91,12 @@ namespace codefirt
             });
             context.Groups.Add(new Group
             {
-                ID = 1,
+                IDGroup = 1,
                 TenGroup = "ADmin"
             });
             context.Groups.Add(new Group
             {
-                ID = 2,
+                IDGroup = 2,
                 TenGroup = "NhanVien"
             });
             context.Accounts.Add(new Account
@@ -133,7 +133,7 @@ namespace codefirt
             });
             context.USERs.Add(new USER
             {
-                IDuser = 102180,
+                ID = 102180,
                 HoTen = "Lê Trường Sơn",
                 SDT = "0326416995",
                 SoNgayLam = 0,
@@ -146,7 +146,7 @@ namespace codefirt
             });
             context.USERs.Add(new USER
             {
-                IDuser= 102181,
+                ID= 102181,
                 HoTen = "Lê Trường Quân" ,
                 SDT = "0393415991",
                 SoNgayLam = 0,
