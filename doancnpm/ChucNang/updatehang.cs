@@ -48,17 +48,18 @@ namespace doancnpm
         {
 
             Model2 db = new Model2();
-            if (MatHang =="");
+            if (this.MaHang =="")
             {
-                if (Check_Infor(txtMSSV.Text, txtNameSV.Text, txtAge.Text, cbbNameLop.SelectedItem))
+                if (Check_Infor(txtMasanpham.Text, txtTensanpham.Text, txtGiaban.Text, txtNgaynhapkho.Text, txtDonvitinh)
                 {
-                    int ID_LopC = (cbbNameLop.SelectedItem as CBBItems).Values;
-                    SinhVien sv = new SinhVien
+
+                    MatHang sv = new MatHang
                     {
-                        MSSV = txtMSSV.Text,
-                        NameSV = txtNameSV.Text,
-                        Age = Convert.ToInt32(txtAge.Text),
-                        ID_Lop = ID_LopC
+                        MaHang = txtMasanpham.Text,
+                        TenHang = txtTensanpham.Text,
+                        Gia = txtGiaban.Text,
+                        NgayNhapKho = txtNgaynhapkho.Text,
+                        DonViTinh = 
                     };
 
                     try
@@ -104,11 +105,11 @@ namespace doancnpm
             };
         }
 
-        public bool Check_Infor(string MSSV, string HoTen, string AGE, object LopHP)
+        public bool Check_Infor(string Mahang, string Tenhang, string Giaban, string Ngaynhapkho, string Donvitinh)
         {
             Model2 db = new Model2();
-            var l = db.SinhVien.Where(p => p.MSSV == MSSV).Select(p => );
-            if (MSSV == "" || HoTen == "" || AGE == "" || LopHP == null)
+            var l = db.MatHangs.Select(p => p );
+            if (Mahang == "" || Tenhang == "" || Giaban == "" || Ngaynhapkho == "" || Donvitinh == "")
             {
                 MessageBox.Show("Bạn phải nhập đầy đủ thông tin");
                 return false;
