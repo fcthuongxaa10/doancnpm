@@ -35,9 +35,9 @@ namespace codefirt
                 MaHang = "110123a",
                 TenHang = "mì tôm",
                 SoLuongSp = 10,
-                Gia = 100000,  
+                Gia = 100000,
                 IDDonViTinh = 12,
-                NgayNhapKho = new DateTime(2019,2,2)
+                NgayNhapKho = new DateTime(2019, 2, 2)
             });
             context.MatHangs.Add(new MatHang
             {
@@ -65,9 +65,9 @@ namespace codefirt
             context.HoaDonBanHangs.Add(new HoaDonBanHang
             {
                 MaHD = "1",
-             NgayLapHD = new DateTime(2020,3,12),
-             TongTien = 300000,
-             IDNV = 111,
+                NgayLapHD = new DateTime(2020, 3, 12),
+                TongTien = 300000,
+                IDNV = 111,
             });
             context.HoaDonBanHangs.Add(new HoaDonBanHang
             {
@@ -79,11 +79,11 @@ namespace codefirt
             context.Accounts.Add(new Account
             {
                 ID = 111,
-                IDGroup = 2 ,
+                IDGroup = 2,
                 IDuser = 102180,
                 Username = "fcthuongxaa10",
-                PassWord= "123456",
-                NgayLap = new DateTime(2020,2,2),
+                PassWord = "123456",
+                NgayLap = new DateTime(2020, 2, 2),
             });
             context.Accounts.Add(new Account
             {
@@ -96,8 +96,8 @@ namespace codefirt
             });
             context.Groups.Add(new Group
             {
-                IDGroup= 1,
-               TenGroup = "ADmin"
+                IDGroup = 1,
+                TenGroup = "ADmin"
             });
             context.Groups.Add(new Group
             {
@@ -110,21 +110,21 @@ namespace codefirt
                 HoTen = "Lê Trường Sơn",
                 SDT = "0326416995",
                 SoNgayLam = 0,
-                LuongCB =2500000,
+                LuongCB = 2500000,
                 GioiTinh = true,
-                NgaySinh =new DateTime(1999,2,2),
+                NgaySinh = new DateTime(1999, 2, 2),
                 Diachi = "quảng trị",
-                SoTienPhat =0,
-                SoTienThuong=0,
+                SoTienPhat = 0,
+                SoTienThuong = 0,
             });
             context.USERs.Add(new USER
             {
-                IDuser= 102181,
-                HoTen = "Lê Trường Quân" ,
+                IDuser = 102181,
+                HoTen = "Lê Trường Quân",
                 SDT = "0393415991",
                 SoNgayLam = 0,
                 LuongCB = 2500000,
-                GioiTinh =false,
+                GioiTinh = false,
                 NgaySinh = new DateTime(1999, 3, 3),
                 Diachi = "quảng trị",
                 SoTienPhat = 0,

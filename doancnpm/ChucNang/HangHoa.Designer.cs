@@ -44,9 +44,11 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Navy;
-            this.groupBox1.Location = new System.Drawing.Point(21, 126);
+            this.groupBox1.Location = new System.Drawing.Point(16, 102);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(677, 503);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(508, 409);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quản Lí Hàng Hóa";
@@ -56,18 +58,19 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 54);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 44);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(633, 416);
+            this.dataGridView1.Size = new System.Drawing.Size(475, 338);
             this.dataGridView1.TabIndex = 0;
-//            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(490, 93);
+            this.textBox1.Location = new System.Drawing.Point(368, 76);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 22);
+            this.textBox1.Size = new System.Drawing.Size(157, 20);
             this.textBox1.TabIndex = 13;
             // 
             // buttonsearchhang
@@ -82,13 +85,15 @@
             this.buttonsearchhang.IconColor = System.Drawing.Color.White;
             this.buttonsearchhang.IconSize = 20;
             this.buttonsearchhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonsearchhang.Location = new System.Drawing.Point(721, 93);
+            this.buttonsearchhang.Location = new System.Drawing.Point(541, 76);
+            this.buttonsearchhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonsearchhang.Name = "buttonsearchhang";
             this.buttonsearchhang.Rotation = 0D;
-            this.buttonsearchhang.Size = new System.Drawing.Size(133, 32);
+            this.buttonsearchhang.Size = new System.Drawing.Size(100, 26);
             this.buttonsearchhang.TabIndex = 12;
             this.buttonsearchhang.Text = "SEARCH";
             this.buttonsearchhang.UseVisualStyleBackColor = false;
+            this.buttonsearchhang.Click += new System.EventHandler(this.buttonsearchhang_Click);
             // 
             // buttonupdatehang
             // 
@@ -102,10 +107,11 @@
             this.buttonupdatehang.IconColor = System.Drawing.Color.White;
             this.buttonupdatehang.IconSize = 20;
             this.buttonupdatehang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonupdatehang.Location = new System.Drawing.Point(721, 364);
+            this.buttonupdatehang.Location = new System.Drawing.Point(541, 296);
+            this.buttonupdatehang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonupdatehang.Name = "buttonupdatehang";
             this.buttonupdatehang.Rotation = 0D;
-            this.buttonupdatehang.Size = new System.Drawing.Size(133, 50);
+            this.buttonupdatehang.Size = new System.Drawing.Size(100, 41);
             this.buttonupdatehang.TabIndex = 11;
             this.buttonupdatehang.Text = "UPDATE";
             this.buttonupdatehang.UseVisualStyleBackColor = false;
@@ -122,10 +128,11 @@
             this.buttondelehang.IconColor = System.Drawing.Color.White;
             this.buttondelehang.IconSize = 20;
             this.buttondelehang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttondelehang.Location = new System.Drawing.Point(721, 272);
+            this.buttondelehang.Location = new System.Drawing.Point(541, 221);
+            this.buttondelehang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttondelehang.Name = "buttondelehang";
             this.buttondelehang.Rotation = 0D;
-            this.buttondelehang.Size = new System.Drawing.Size(133, 50);
+            this.buttondelehang.Size = new System.Drawing.Size(100, 41);
             this.buttondelehang.TabIndex = 10;
             this.buttondelehang.Text = "DELETE";
             this.buttondelehang.UseVisualStyleBackColor = false;
@@ -142,20 +149,21 @@
             this.buttonaddhang.IconColor = System.Drawing.Color.White;
             this.buttonaddhang.IconSize = 20;
             this.buttonaddhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonaddhang.Location = new System.Drawing.Point(721, 180);
+            this.buttonaddhang.Location = new System.Drawing.Point(541, 146);
+            this.buttonaddhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonaddhang.Name = "buttonaddhang";
             this.buttonaddhang.Rotation = 0D;
-            this.buttonaddhang.Size = new System.Drawing.Size(133, 50);
+            this.buttonaddhang.Size = new System.Drawing.Size(100, 41);
             this.buttonaddhang.TabIndex = 9;
             this.buttonaddhang.Text = "ADD";
             this.buttonaddhang.UseVisualStyleBackColor = false;
             // 
             // HangHoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1056, 755);
+            this.ClientSize = new System.Drawing.Size(792, 609);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonsearchhang);
             this.Controls.Add(this.buttonupdatehang);
@@ -163,6 +171,7 @@
             this.Controls.Add(this.buttonaddhang);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HangHoa";
             this.Text = "HangHoa";
             this.groupBox1.ResumeLayout(false);
