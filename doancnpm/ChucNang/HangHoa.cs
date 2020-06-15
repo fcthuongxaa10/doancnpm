@@ -13,15 +13,24 @@ namespace doancnpm
 {
     public partial class HangHoa : Form
     {
+        private updatehang updatehang;
         public HangHoa()
         {
+            
             InitializeComponent();
             Model2 db = new Model2();
             var li = db.MatHangs.Select(p => p);
             dataGridView1.DataSource = li.ToList();
         }
 
-        private void buttonsearchhang_Click(object sender, EventArgs e)
+        private void Show()
+        {
+            Model2 db = new Model2();
+            var l = db.MatHangs.Select(p => p);
+            dataGridView1.DataSource = l.ToList();
+        }
+
+        private void buttonsearchacc_Click(object sender, EventArgs e)
         {
             try
             {
@@ -41,6 +50,39 @@ namespace doancnpm
             {
                 MessageBox.Show("Chưa nhậo sữ liệu cần tìm!");
             }
+        }
+
+        private void buttondeleteacc_Click(object sender, EventArgs e)
+        {
+            DataGridViewSelectedRowCollection s = dataGridView1.SelectedRows;
+            Model2 mh = new Model2();
+            if (s == null)
+            {
+                MessageBox.Show("Hãy chọn mặt hàng cần xóa!");
+            }
+            else
+            {
+                foreach (MatHang i in mh.MatHangs)
+                {
+                    foreach (DataGridViewRow j in s)
+                    {
+                        if (i.MaHang == j.Cells["MaHang"].Value.ToString())
+                        {
+                            mh.MatHangs.Remove(i);
+                        }
+                    }
+                }
+                mh.SaveChanges();
+                Show();
+            }
+            
+        }
+       
+        private void buttonaddacc_Click(object sender, EventArgs e)
+        {
+            updatehang f = new updatehang("");
+            f.D += new updatehang
+            f.ShowDialog();
         }
     }
 
