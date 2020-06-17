@@ -1,4 +1,5 @@
-﻿using System;
+﻿using doancnpm.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,7 @@ namespace doancnpm
         public HangHoa()
         {
             InitializeComponent();
-            Model1 db = new Model1();
+            Model2 db = new Model2();
             var li = db.MatHangs.Select(p => new { p.MaHang, p.TenHang });
             dataGridView1.DataSource = li.ToList();
         }
