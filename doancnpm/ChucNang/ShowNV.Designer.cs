@@ -28,47 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             this.buttonchamcong = new FontAwesome.Sharp.IconButton();
             this.buttonsearch = new FontAwesome.Sharp.IconButton();
             this.buttoneditnv = new FontAwesome.Sharp.IconButton();
             this.buttonxoanv = new FontAwesome.Sharp.IconButton();
             this.buttonaddnhanvien = new FontAwesome.Sharp.IconButton();
-            this.groupBox1.SuspendLayout();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // txtsearch
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(36, 83);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(730, 518);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Quản Lí Nhân Viên";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.dataGridView1.Location = new System.Drawing.Point(6, 26);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(704, 474);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(785, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 22);
-            this.textBox1.TabIndex = 12;
+            this.txtsearch.Location = new System.Drawing.Point(785, 36);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(127, 22);
+            this.txtsearch.TabIndex = 12;
             // 
             // buttonchamcong
             // 
@@ -109,6 +84,7 @@
             this.buttonsearch.TabIndex = 11;
             this.buttonsearch.Text = "SEARCH";
             this.buttonsearch.UseVisualStyleBackColor = false;
+            this.buttonsearch.Click += new System.EventHandler(this.buttonsearch_Click);
             // 
             // buttoneditnv
             // 
@@ -173,23 +149,31 @@
             this.buttonaddnhanvien.UseVisualStyleBackColor = false;
             this.buttonaddnhanvien.Click += new System.EventHandler(this.buttonaddnhanvien_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(29, 81);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(737, 497);
+            this.dataGridView1.TabIndex = 14;
+            // 
             // ShowNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1117, 613);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonchamcong);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.buttonsearch);
             this.Controls.Add(this.buttoneditnv);
             this.Controls.Add(this.buttonxoanv);
             this.Controls.Add(this.buttonaddnhanvien);
-            this.Controls.Add(this.groupBox1);
             this.Name = "ShowNV";
             this.Text = "ShowNV";
             this.Load += new System.EventHandler(this.ShowNV_Load);
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -197,12 +181,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
         private FontAwesome.Sharp.IconButton buttonaddnhanvien;
         private FontAwesome.Sharp.IconButton buttonxoanv;
         private FontAwesome.Sharp.IconButton buttoneditnv;
         private FontAwesome.Sharp.IconButton buttonsearch;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtsearch;
         private FontAwesome.Sharp.IconButton buttonchamcong;
         private System.Windows.Forms.DataGridView dataGridView1;
     }

@@ -160,6 +160,12 @@
     <Compile Include="ChucNang\updatehang.Designer.cs">
       <DependentUpon>updatehang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\ThongtinNv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\ThongtinNv.Designer.cs">
+      <DependentUpon>ThongtinNv.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChucNang\Acount.resx">
       <DependentUpon>Acount.cs</DependentUpon>
     </EmbeddedResource>

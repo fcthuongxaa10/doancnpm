@@ -22,5 +22,5 @@ namespace doancnpm.DB
         {
             this.Accounts = new HashSet<Account>();
         }
-    }
+    }   
 }
