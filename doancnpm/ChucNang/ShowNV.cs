@@ -59,8 +59,8 @@ namespace doancnpm
             }
         public void Show()
         {
-            Model1 DB = new Model1();
-            var li = DB.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+            Model4 DB = new Model4();
+            var li = DB.USERs.Select(p => new { p.IDUser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
             dataGridView1.DataSource = li.ToList();
         }
 
@@ -68,14 +68,14 @@ namespace doancnpm
         {
          
                 DataGridViewSelectedRowCollection r = dataGridView1.SelectedRows;
-                Model1 db = new Model1();
+                Model4 db = new Model4();
                 try
                 {
                     foreach (USER i in db.USERs)
                     {
                         foreach (DataGridViewRow j in r)
                         {
-                            if (i.ID == Convert.ToInt32( j.Cells["ID"].Value.ToString()))
+                            if (i.IDUser == Convert.ToInt32( j.Cells["ID"].Value.ToString()))
                             {
                                 USER t = i;
                                 db.USERs.Remove(t);
@@ -89,7 +89,7 @@ namespace doancnpm
                     MessageBox.Show("Xin Kiem Tra Lai");
                 }
                 db.SaveChanges();
-                var li1 = db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+                var li1 = db.USERs.Select(p => new { p.IDUser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
                 dataGridView1.DataSource = li1.ToList();
           
         }
@@ -98,9 +98,9 @@ namespace doancnpm
 
         private void buttonsearch_Click(object sender, EventArgs e)
         {
-            Model1 DB = new Model1();
+            Model4 DB = new Model4();
             var li = DB.USERs.Where(p=> p.HoTen== txtsearch.Text   )
-                   .Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+                   .Select(p => new { p.IDUser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
             dataGridView1.DataSource = li.ToList();
             if (dataGridView1.Rows.Count == 0)
             {
@@ -110,8 +110,8 @@ namespace doancnpm
 
         private void ShowNV_Load(object sender, EventArgs e)
         {
-            Model1 Db = new Model1();
-            var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+            Model4 Db = new Model4();
+            var li = Db.USERs.Select(p => new { p.IDUser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
             dataGridView1.DataSource = li.ToList();
         }
     }

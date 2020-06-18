@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace doancnpm
+namespace doancnpm.ChucNang
 {
-    public partial class ThemAccount : Form
+    public partial class Account1 : Form
     {
-        public ThemAccount()
+        public Account1()
         {
             InitializeComponent();
         }

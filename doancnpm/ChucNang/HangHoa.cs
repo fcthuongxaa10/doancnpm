@@ -18,14 +18,14 @@ namespace doancnpm
         {
             
             InitializeComponent();
-            Model2 db = new Model2();
+            Model4 db = new Model4();
             var li = db.MatHangs.Select(p => p);
             dataGridView1.DataSource = li.ToList();
         }
 
         private void Show()
         {
-            Model2 db = new Model2();
+            Model4 db = new Model4();
             var l = db.MatHangs.Select(p => p);
             dataGridView1.DataSource = l.ToList();
         }
@@ -34,7 +34,7 @@ namespace doancnpm
         {
             try
             {
-                var db = new Model2();
+                var db = new Model4();
                 List<MatHang> l = new List<MatHang>();
 
                 foreach (MatHang i in db.MatHangs)
@@ -55,7 +55,7 @@ namespace doancnpm
         private void buttondeleteacc_Click(object sender, EventArgs e)
         {
             DataGridViewSelectedRowCollection s = dataGridView1.SelectedRows;
-            Model2 mh = new Model2();
+            Model4 mh = new Model4();
             if (s == null)
             {
                 MessageBox.Show("Hãy chọn mặt hàng cần xóa!");

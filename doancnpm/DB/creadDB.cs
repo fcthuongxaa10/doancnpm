@@ -5,15 +5,14 @@ using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
-using codefirt;
 using doancnpm;
 using doancnpm.DB;
 
-namespace codefirt
+namespace doancnpm.DB
 {
-    public class creadDB : CreateDatabaseIfNotExists<Model1>
+    public class creadDB : CreateDatabaseIfNotExists<Model4>
     {
-        protected override void Seed(Model1 context)
+        protected override void Seed(Model4 context)
         {
             //context.DonViTinhs.Add(new DonViTinh
             //{

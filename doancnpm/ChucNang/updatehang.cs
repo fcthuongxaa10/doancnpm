@@ -30,7 +30,7 @@ namespace doancnpm
             {
                 this.Text = "EDIT";
                 txtMasanpham.Text = MaHang;
-                Model2 db = new Model2();
+                Model4 db = new Model4();
                 foreach (MatHang i in db.MatHangs)
                 {
                     if (i.MaHang == MaHang)
@@ -47,54 +47,54 @@ namespace doancnpm
         public void AU()
         {
 
-            Model2 db = new Model2();
-            if (this.MaHang =="")
-            {
-                if (Check_Infor(txtMasanpham.Text, txtTensanpham.Text, txtGiaban.Text, txtNgaynhapkho.Text, txtDonvitinh)
-                {
+        //    Model4 db = new Model4();
+        //    if (this.MaHang =="")
+        //    {
+        //        if (Check_Infor(txtMasanpham.Text, txtTensanpham.Text, txtGiaban.Text, txtNgaynhapkho.Text, txtDonvitinh)
+        //        {
 
-                    MatHang sv = new MatHang
-                    {
-                        MaHang = txtMasanpham.Text,
-                        TenHang = txtTensanpham.Text,
-                        Gia = txtGiaban.Text,
-                        NgayNhapKho = txtNgaynhapkho.Text,
-                        DonViTinh = 
-                    };
+        //            MatHang sv = new MatHang
+        //            {
+        //                MaHang = txtMasanpham.Text,
+        //                //TenHang = txtTensanpham.Text,
+        //                //Gia = txtGiaban.Text,
+        //                //NgayNhapKho = txtNgaynhapkho.Text,
+        //                //DonViTinh = 
+        //            };
 
-                    try
-                    {
-                        db.SinhVien.Add(sv);
-                        this.MSSV = txtMSSV.Text;
-                        db.SaveChanges();
-                        MessageBox.Show("Thêm thành công!");
-                        this.Close();
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("Nhập sai định dạng!");
-                    }
-                }
+        //            try
+        //            {
+        //                db.SinhVien.Add(sv);
+        //               // this.MSSV = txtMSSV.Text;
+        //                db.SaveChanges();
+        //                MessageBox.Show("Thêm thành công!");
+        //                this.Close();
+        //            }
+        //            catch (Exception)
+        //            {
+        //                MessageBox.Show("Nhập sai định dạng!");
+        //            }
+        //        }
 
-            }
-            else
-            {
-                try
-                {
-                    var l = db.SinhVien.Where(p => p.MSSV == this.MSSV).FirstOrDefault();
-                    l.MSSV = MSSV;
-                    l.NameSV = txtNameSV.Text;
-                    l.Age = Convert.ToInt32(txtAge.Text);
-                    l.ID_Lop = (cbbNameLop.SelectedItem as CBBItems).Values;
-                    db.SaveChanges();
-                    MessageBox.Show("Chỉnh sửa thành công!");
-                    this.Close();
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Nhập sai định dạng!");
-                }
-            }
+        //    }
+        //    else
+        //    {
+        //        try
+        //        {
+        //            //var l = db.SinhVien.Where(p => p.MSSV == this.MSSV).FirstOrDefault();
+        //            //l.MSSV = MSSV;
+        //            //l.NameSV = txtNameSV.Text;
+        //            //l.Age = Convert.ToInt32(txtAge.Text);
+        //            //l.ID_Lop = (cbbNameLop.SelectedItem as CBBItems).Values;
+        //            db.SaveChanges();
+        //            MessageBox.Show("Chỉnh sửa thành công!");
+        //            this.Close();
+        //        }
+        //        catch (Exception)
+        //        {
+        //            MessageBox.Show("Nhập sai định dạng!");
+        //        }
+        //    }
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
@@ -107,7 +107,7 @@ namespace doancnpm
 
         public bool Check_Infor(string Mahang, string Tenhang, string Giaban, string Ngaynhapkho, string Donvitinh)
         {
-            Model2 db = new Model2();
+            Model4 db = new Model4();
             var l = db.MatHangs.Select(p => p );
             if (Mahang == "" || Tenhang == "" || Giaban == "" || Ngaynhapkho == "" || Donvitinh == "")
             {

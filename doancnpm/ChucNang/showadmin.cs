@@ -26,8 +26,8 @@ namespace doancnpm
 
         private void showadmin_Load(object sender, EventArgs e)
         {
-            Model1 db = new Model1();
-            var li = db.USERs.Where(p => Iduser1 == p.ID).FirstOrDefault();
+            Model4 db = new Model4();
+            var li = db.USERs.Where(p => Iduser1 == p.IDUser).FirstOrDefault();
             txtname.Text = li.HoTen;
             txtphone.Text = li.SDT;
             txtId.Text = Iduser1.ToString();

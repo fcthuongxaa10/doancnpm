@@ -58,11 +58,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucNang\Acount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\Acount.Designer.cs">
-      <DependentUpon>Acount.cs</DependentUpon>
+    <Compile Include="ChucNang\Account.cs" />
+    <Compile Include="ChucNang\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
     </Compile>
     <Compile Include="ChucNang\Chamcong.cs">
       <SubType>Form</SubType>
@@ -76,10 +74,16 @@
     <Compile Include="ChucNang\dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\Admin.cs">
+    <Compile Include="ChucNang\Form2Acc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChucNang\Admin.Designer.cs">
+    <Compile Include="ChucNang\Form2Acc.Designer.cs">
+      <DependentUpon>Form2Acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="DB\Account.cs" />
@@ -120,7 +124,7 @@
     <Compile Include="Interface\FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model2.cs" />
+    <Compile Include="Model4.cs" />
     <Compile Include="NoteDungGitSauXoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ChucNang\showadmin.cs">
@@ -134,12 +138,6 @@
     </Compile>
     <Compile Include="ChucNang\ShowNV.Designer.cs">
       <DependentUpon>ShowNV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChucNang\ThemAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\ThemAccount.Designer.cs">
-      <DependentUpon>ThemAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ChucNang\themnhanvien.cs">
@@ -166,8 +164,8 @@
     <Compile Include="ChucNang\ThongtinNv.Designer.cs">
       <DependentUpon>ThongtinNv.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChucNang\Acount.resx">
-      <DependentUpon>Acount.cs</DependentUpon>
+    <EmbeddedResource Include="ChucNang\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\Chamcong.resx">
       <DependentUpon>Chamcong.cs</DependentUpon>
@@ -175,7 +173,10 @@
     <EmbeddedResource Include="ChucNang\dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\Admin.resx">
+    <EmbeddedResource Include="ChucNang\Form2Acc.resx">
+      <DependentUpon>Form2Acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\Doanhthu.resx">
@@ -195,9 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\ShowNV.resx">
       <DependentUpon>ShowNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\ThemAccount.resx">
-      <DependentUpon>ThemAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>

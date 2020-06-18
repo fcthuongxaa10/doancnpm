@@ -27,7 +27,7 @@ namespace doancnpm
 
             try
             {
-                Model1 db = new Model1();
+                Model4 db = new Model4();
                 var li = db.Accounts.Where(p => p.Username == textBox1.Text && p.PassWord == textBox2.Text).FirstOrDefault();
                 Id = li.IDGroup;
                 iduser = li.IDuser;
@@ -52,8 +52,32 @@ namespace doancnpm
             }
             else
             {
-                MessageBox.Show("Tai khoan khong ton tai");
+                MessageBox.Show("Bạn nhập sai user hoặc password. Vui lòng nhập lại!!");
             }
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+                textBox1.Text = "";
+            if (textBox2.Text != "")
+                textBox2.Text = "";
+        }
+
+     
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+                textBox2.PasswordChar = '\0';
+            else
+                textBox2.PasswordChar = '*';
+
         }
     }
 }
