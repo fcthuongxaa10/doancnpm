@@ -80,9 +80,9 @@ namespace doancnpm
        
         private void buttonaddacc_Click(object sender, EventArgs e)
         {
-            updatehang f = new updatehang("");
-            f.D += new updatehang
-            f.ShowDialog();
+            //updatehang f = new updatehang("");
+            //f.D += new updatehang
+            //f.ShowDialog();
         }
     }
 
