@@ -96,13 +96,13 @@ namespace codefirt
             });
             context.Groups.Add(new Group
             {
-                IDGroup = 2,
+                IDGroup =2,
                 TenGroup = "NhanVien"
             });
             context.Accounts.Add(new Account
             {
                 ID = 111,
-                IDGroup = 2 ,
+                IDGroup =2,
                 IDuser = 102180,
                 Username = "fcthuongxaa10",
                 PassWord= "123456",

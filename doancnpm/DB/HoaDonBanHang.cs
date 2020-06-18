@@ -11,7 +11,7 @@ namespace doancnpm.DB
     [Table("HoaDonBanHang")]
   public  class HoaDonBanHang
     {
-        //xyz//hdjf
+     
         [Key]
         [Required]
         [StringLength(50)]
@@ -24,7 +24,7 @@ namespace doancnpm.DB
        
         public virtual ICollection<ChiTietHoaDon> MatHangs { set; get; }
         public int IDNV { set; get; }
-        [ForeignKey("IDNV")]
+        [ForeignKey("IDNV")] 
         public virtual Account Account { get; set; }
      
     }

@@ -94,12 +94,7 @@ namespace doancnpm
           
         }
 
-        private void ShowNV_Load(object sender, EventArgs e)
-        {
-                    Model1 Db = new Model1();
-                    var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh,p.SoNgayLam,p.SoTienThuong,p.SoTienPhat,p.Diachi });
-                    dataGridView1.DataSource = li.ToList();
-        }
+        
 
         private void buttonsearch_Click(object sender, EventArgs e)
         {
@@ -109,8 +104,15 @@ namespace doancnpm
             dataGridView1.DataSource = li.ToList();
             if (dataGridView1.Rows.Count == 0)
             {
-                MessageBox.Show("Sinh Viên Không Có Trong Lớp");
+                MessageBox.Show("Khong Tim Thay Nhân viên");
             }
+        }
+
+        private void ShowNV_Load(object sender, EventArgs e)
+        {
+            Model1 Db = new Model1();
+            var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+            dataGridView1.DataSource = li.ToList();
         }
     }
 }

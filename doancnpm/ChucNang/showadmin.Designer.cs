@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtphone = new System.Windows.Forms.TextBox();
+            this.txtaddress = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,40 +42,40 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtpasss = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtId.Location = new System.Drawing.Point(127, 22);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 22);
+            this.txtId.TabIndex = 0;
             // 
-            // textBox2
+            // txtname
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtname.Location = new System.Drawing.Point(127, 61);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(100, 22);
+            this.txtname.TabIndex = 1;
             // 
-            // textBox3
+            // txtphone
             // 
-            this.textBox3.Location = new System.Drawing.Point(127, 103);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 2;
+            this.txtphone.Location = new System.Drawing.Point(127, 103);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(100, 22);
+            this.txtphone.TabIndex = 2;
             // 
-            // textBox4
+            // txtaddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(395, 21);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(286, 22);
-            this.textBox4.TabIndex = 3;
+            this.txtaddress.Location = new System.Drawing.Point(395, 21);
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.Size = new System.Drawing.Size(286, 22);
+            this.txtaddress.TabIndex = 3;
             // 
             // label1
             // 
@@ -169,12 +169,12 @@
             this.label14.TabIndex = 15;
             this.label14.Text = "USER NAME";
             // 
-            // textBox10
+            // txtusername
             // 
-            this.textBox10.Location = new System.Drawing.Point(127, 146);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(192, 22);
-            this.textBox10.TabIndex = 16;
+            this.txtusername.Location = new System.Drawing.Point(127, 146);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(192, 22);
+            this.txtusername.TabIndex = 16;
             // 
             // label15
             // 
@@ -185,19 +185,19 @@
             this.label15.TabIndex = 17;
             this.label15.Text = "PASS WORD";
             // 
-            // textBox11
+            // txtpasss
             // 
-            this.textBox11.Location = new System.Drawing.Point(127, 193);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(192, 22);
-            this.textBox11.TabIndex = 18;
+            this.txtpasss.Location = new System.Drawing.Point(127, 193);
+            this.txtpasss.Name = "txtpasss";
+            this.txtpasss.Size = new System.Drawing.Size(192, 22);
+            this.txtpasss.TabIndex = 18;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.txtpasss);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txtusername);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
@@ -208,10 +208,10 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtaddress);
+            this.groupBox1.Controls.Add(this.txtphone);
+            this.groupBox1.Controls.Add(this.txtname);
+            this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.ForeColor = System.Drawing.Color.Navy;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -219,6 +219,7 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hồ Sơ Nhân Viên";
+//            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // showadmin
             // 
@@ -229,6 +230,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "showadmin";
             this.Text = "showadmin";
+            this.Load += new System.EventHandler(this.showadmin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -237,10 +239,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.TextBox txtaddress;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -251,9 +253,9 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtpasss;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }
