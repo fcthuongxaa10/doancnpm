@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button5 = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonquanliacc = new FontAwesome.Sharp.IconButton();
             this.buttondoanhthu = new FontAwesome.Sharp.IconButton();
@@ -56,10 +55,10 @@
             // 
             this.button5.BackColor = System.Drawing.Color.DodgerBlue;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1421, 12);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(1066, 10);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 46);
+            this.button5.Size = new System.Drawing.Size(104, 37);
             this.button5.TabIndex = 5;
             this.button5.Text = "Đăng xuất";
             this.button5.UseVisualStyleBackColor = false;
@@ -73,9 +72,9 @@
             this.panel1.Controls.Add(this.buttonthongtincanhan);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 788);
+            this.panel1.Size = new System.Drawing.Size(150, 640);
             this.panel1.TabIndex = 6;
             // 
             // buttonquanliacc
@@ -90,11 +89,11 @@
             this.buttonquanliacc.IconColor = System.Drawing.Color.White;
             this.buttonquanliacc.IconSize = 50;
             this.buttonquanliacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonquanliacc.Location = new System.Drawing.Point(0, 446);
-            this.buttonquanliacc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonquanliacc.Location = new System.Drawing.Point(0, 362);
+            this.buttonquanliacc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonquanliacc.Name = "buttonquanliacc";
             this.buttonquanliacc.Rotation = 0D;
-            this.buttonquanliacc.Size = new System.Drawing.Size(200, 79);
+            this.buttonquanliacc.Size = new System.Drawing.Size(150, 64);
             this.buttonquanliacc.TabIndex = 10;
             this.buttonquanliacc.Text = "Quản Lí Accont";
             this.buttonquanliacc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -113,11 +112,11 @@
             this.buttondoanhthu.IconColor = System.Drawing.Color.White;
             this.buttondoanhthu.IconSize = 50;
             this.buttondoanhthu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttondoanhthu.Location = new System.Drawing.Point(0, 369);
-            this.buttondoanhthu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttondoanhthu.Location = new System.Drawing.Point(0, 300);
+            this.buttondoanhthu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttondoanhthu.Name = "buttondoanhthu";
             this.buttondoanhthu.Rotation = 0D;
-            this.buttondoanhthu.Size = new System.Drawing.Size(200, 79);
+            this.buttondoanhthu.Size = new System.Drawing.Size(150, 64);
             this.buttondoanhthu.TabIndex = 9;
             this.buttondoanhthu.Text = "Doanh Thu";
             this.buttondoanhthu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,11 +134,11 @@
             this.buttonquanlihanghoa.IconColor = System.Drawing.Color.White;
             this.buttonquanlihanghoa.IconSize = 50;
             this.buttonquanlihanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonquanlihanghoa.Location = new System.Drawing.Point(0, 298);
-            this.buttonquanlihanghoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonquanlihanghoa.Location = new System.Drawing.Point(0, 242);
+            this.buttonquanlihanghoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonquanlihanghoa.Name = "buttonquanlihanghoa";
             this.buttonquanlihanghoa.Rotation = 0D;
-            this.buttonquanlihanghoa.Size = new System.Drawing.Size(200, 79);
+            this.buttonquanlihanghoa.Size = new System.Drawing.Size(150, 64);
             this.buttonquanlihanghoa.TabIndex = 8;
             this.buttonquanlihanghoa.Text = "Quản Lí Hàng Hóa";
             this.buttonquanlihanghoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -158,11 +157,11 @@
             this.buttonquanlinhanvien.IconColor = System.Drawing.Color.White;
             this.buttonquanlinhanvien.IconSize = 50;
             this.buttonquanlinhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonquanlinhanvien.Location = new System.Drawing.Point(0, 217);
-            this.buttonquanlinhanvien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonquanlinhanvien.Location = new System.Drawing.Point(0, 176);
+            this.buttonquanlinhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonquanlinhanvien.Name = "buttonquanlinhanvien";
             this.buttonquanlinhanvien.Rotation = 0D;
-            this.buttonquanlinhanvien.Size = new System.Drawing.Size(205, 85);
+            this.buttonquanlinhanvien.Size = new System.Drawing.Size(154, 69);
             this.buttonquanlinhanvien.TabIndex = 8;
             this.buttonquanlinhanvien.Text = "Quản Lí Nhân Viên";
             this.buttonquanlinhanvien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -181,11 +180,11 @@
             this.buttonthongtincanhan.IconColor = System.Drawing.Color.White;
             this.buttonthongtincanhan.IconSize = 50;
             this.buttonthongtincanhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonthongtincanhan.Location = new System.Drawing.Point(0, 140);
-            this.buttonthongtincanhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonthongtincanhan.Location = new System.Drawing.Point(0, 114);
+            this.buttonthongtincanhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonthongtincanhan.Name = "buttonthongtincanhan";
             this.buttonthongtincanhan.Rotation = 0D;
-            this.buttonthongtincanhan.Size = new System.Drawing.Size(200, 79);
+            this.buttonthongtincanhan.Size = new System.Drawing.Size(150, 64);
             this.buttonthongtincanhan.TabIndex = 7;
             this.buttonthongtincanhan.Text = "Thông Tin Cá Nhân";
             this.buttonthongtincanhan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -195,10 +194,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::doancnpm.Properties.Resources.unnamed;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -212,9 +211,9 @@
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1371, 134);
+            this.panel2.Size = new System.Drawing.Size(1143, 109);
             this.panel2.TabIndex = 7;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -231,10 +230,10 @@
             this.buttonback.IconSize = 20;
             this.buttonback.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonback.Location = new System.Drawing.Point(0, 0);
-            this.buttonback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonback.Name = "buttonback";
             this.buttonback.Rotation = 0D;
-            this.buttonback.Size = new System.Drawing.Size(115, 50);
+            this.buttonback.Size = new System.Drawing.Size(86, 41);
             this.buttonback.TabIndex = 15;
             this.buttonback.Text = "Back";
             this.buttonback.UseVisualStyleBackColor = false;
@@ -252,11 +251,11 @@
             this.buttondangxuat.IconColor = System.Drawing.Color.White;
             this.buttondangxuat.IconSize = 50;
             this.buttondangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttondangxuat.Location = new System.Drawing.Point(1277, 0);
-            this.buttondangxuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttondangxuat.Location = new System.Drawing.Point(958, 0);
+            this.buttondangxuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttondangxuat.Name = "buttondangxuat";
             this.buttondangxuat.Rotation = 0D;
-            this.buttondangxuat.Size = new System.Drawing.Size(149, 50);
+            this.buttondangxuat.Size = new System.Drawing.Size(112, 41);
             this.buttondangxuat.TabIndex = 11;
             this.buttondangxuat.Text = "Đăng Xuất";
             this.buttondangxuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -266,9 +265,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(643, 59);
+            this.label1.Location = new System.Drawing.Point(482, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 17);
+            this.label1.Size = new System.Drawing.Size(136, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Chào Mừng Lê Trường Sơn";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -278,30 +278,30 @@
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconSize = 68;
-            this.iconPictureBox1.Location = new System.Drawing.Point(547, 7);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconPictureBox1.IconSize = 52;
+            this.iconPictureBox1.Location = new System.Drawing.Point(410, 6);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(69, 68);
+            this.iconPictureBox1.Size = new System.Drawing.Size(52, 55);
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(205, 140);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(154, 114);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1220, 612);
+            this.panel3.Size = new System.Drawing.Size(915, 497);
             this.panel3.TabIndex = 8;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::doancnpm.Properties.Resources.shop_stock_market_business_logo_icon_design_vector_229267541;
             this.pictureBox2.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1217, 609);
+            this.pictureBox2.Size = new System.Drawing.Size(913, 495);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -309,15 +309,15 @@
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1371, 750);
+            this.ClientSize = new System.Drawing.Size(1143, 619);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button5);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);
@@ -333,7 +333,6 @@
 
         #endregion
         private System.Windows.Forms.Button button5;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton buttonquanlihanghoa;
         private FontAwesome.Sharp.IconButton buttonquanlinhanvien;

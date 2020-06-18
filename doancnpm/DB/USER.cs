@@ -33,7 +33,7 @@ namespace doancnpm.DB
         public decimal SoTienPhat { set; get; }
 
         public virtual ICollection<Account> Accounts { get; set; }
-        //tạo cái mới cho nhanh
+  
 
     }
 }

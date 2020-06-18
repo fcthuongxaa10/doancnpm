@@ -52,13 +52,14 @@
             // 
             this.buttonsearchacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.buttonsearchacc.CausesValidation = false;
-            this.buttonsearchacc.FlatAppearance.BorderSize = 5;
+            this.buttonsearchacc.FlatAppearance.BorderSize = 0;
             this.buttonsearchacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonsearchacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttonsearchacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.buttonsearchacc.ForeColor = System.Drawing.Color.White;
             this.buttonsearchacc.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.buttonsearchacc.IconColor = System.Drawing.Color.White;
-            this.buttonsearchacc.IconSize = 20;
+            this.buttonsearchacc.IconSize = 15;
             this.buttonsearchacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonsearchacc.Location = new System.Drawing.Point(908, 101);
             this.buttonsearchacc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -67,6 +68,7 @@
             this.buttonsearchacc.Size = new System.Drawing.Size(150, 40);
             this.buttonsearchacc.TabIndex = 13;
             this.buttonsearchacc.Text = "SEARCH";
+            this.buttonsearchacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonsearchacc.UseVisualStyleBackColor = false;
             this.buttonsearchacc.Click += new System.EventHandler(this.buttonsearchacc_Click);
             // 
@@ -74,13 +76,14 @@
             // 
             this.buttonupdateacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.buttonupdateacc.CausesValidation = false;
-            this.buttonupdateacc.FlatAppearance.BorderSize = 5;
+            this.buttonupdateacc.FlatAppearance.BorderSize = 0;
             this.buttonupdateacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonupdateacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttonupdateacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.buttonupdateacc.ForeColor = System.Drawing.Color.White;
             this.buttonupdateacc.IconChar = FontAwesome.Sharp.IconChar.Wrench;
             this.buttonupdateacc.IconColor = System.Drawing.Color.White;
-            this.buttonupdateacc.IconSize = 20;
+            this.buttonupdateacc.IconSize = 15;
             this.buttonupdateacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonupdateacc.Location = new System.Drawing.Point(908, 434);
             this.buttonupdateacc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -89,6 +92,7 @@
             this.buttonupdateacc.Size = new System.Drawing.Size(150, 62);
             this.buttonupdateacc.TabIndex = 12;
             this.buttonupdateacc.Text = "UPDATE";
+            this.buttonupdateacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonupdateacc.UseVisualStyleBackColor = false;
             this.buttonupdateacc.Click += new System.EventHandler(this.buttonupdateacc_Click);
             // 
@@ -96,13 +100,14 @@
             // 
             this.buttondeleteacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.buttondeleteacc.CausesValidation = false;
-            this.buttondeleteacc.FlatAppearance.BorderSize = 5;
+            this.buttondeleteacc.FlatAppearance.BorderSize = 0;
             this.buttondeleteacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttondeleteacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttondeleteacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.buttondeleteacc.ForeColor = System.Drawing.Color.White;
             this.buttondeleteacc.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.buttondeleteacc.IconColor = System.Drawing.Color.White;
-            this.buttondeleteacc.IconSize = 20;
+            this.buttondeleteacc.IconSize = 15;
             this.buttondeleteacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttondeleteacc.Location = new System.Drawing.Point(908, 310);
             this.buttondeleteacc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -111,6 +116,7 @@
             this.buttondeleteacc.Size = new System.Drawing.Size(150, 62);
             this.buttondeleteacc.TabIndex = 11;
             this.buttondeleteacc.Text = "DELETE";
+            this.buttondeleteacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttondeleteacc.UseVisualStyleBackColor = false;
             this.buttondeleteacc.Click += new System.EventHandler(this.buttondeleteacc_Click);
             // 
@@ -118,13 +124,14 @@
             // 
             this.buttonaddacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.buttonaddacc.CausesValidation = false;
-            this.buttonaddacc.FlatAppearance.BorderSize = 5;
+            this.buttonaddacc.FlatAppearance.BorderSize = 0;
             this.buttonaddacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonaddacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttonaddacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.buttonaddacc.ForeColor = System.Drawing.Color.White;
             this.buttonaddacc.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.buttonaddacc.IconColor = System.Drawing.Color.White;
-            this.buttonaddacc.IconSize = 20;
+            this.buttonaddacc.IconSize = 15;
             this.buttonaddacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonaddacc.Location = new System.Drawing.Point(908, 190);
             this.buttonaddacc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -133,6 +140,7 @@
             this.buttonaddacc.Size = new System.Drawing.Size(150, 62);
             this.buttonaddacc.TabIndex = 10;
             this.buttonaddacc.Text = "ADD";
+            this.buttonaddacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonaddacc.UseVisualStyleBackColor = false;
             this.buttonaddacc.Click += new System.EventHandler(this.buttonaddacc_Click);
             // 
@@ -187,7 +195,6 @@
             this.Load += new System.EventHandler(this.Acount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtAC)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -114,6 +114,12 @@
     <Compile Include="ChucNang\NhanVien2.Designer.cs">
       <DependentUpon>NhanVien2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model2.cs" />
     <Compile Include="NoteDungGitSauXoa.cs" />
     <Compile Include="Program.cs" />
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\ThemAccount.resx">
       <DependentUpon>ThemAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
