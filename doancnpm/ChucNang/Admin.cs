@@ -13,9 +13,13 @@ namespace doancnpm
     public partial class Admin : Form
     {
         private Form Formchild;
+        private int Iduser;
 
-        public Admin()
+        public int Iduser1 { get => Iduser; set => Iduser = value; }
+
+        public Admin(int s)
         {
+            Iduser1=s;
             InitializeComponent();
         }
 
@@ -37,7 +41,7 @@ namespace doancnpm
         private void iconButton1_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            OpenChildForm(new showadmin(), btn);
+            OpenChildForm(new showadmin(Iduser1), btn);
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -58,30 +62,6 @@ namespace doancnpm
             Button btn = sender as Button;
             OpenChildForm(new Acount(), btn);
         }
-
-        private void iconButton7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Admin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

@@ -30,8 +30,8 @@ namespace doancnpm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Admin f = new Admin();
-            f.ShowDialog();
+            //Admin f = new Admin();
+            //f.ShowDialog();
         }
     }
 }

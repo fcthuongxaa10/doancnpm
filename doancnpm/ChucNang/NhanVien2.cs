@@ -13,9 +13,13 @@ namespace doancnpm
     public partial class NhanVien2 : Form
     {
         private Form Formchild;
+        private int Iduser;
 
-        public NhanVien2()
+        public int Iduser1 { get => Iduser; set => Iduser = value; }
+
+        public NhanVien2(int s)
         {
+           Iduser1=s;
             InitializeComponent();
         }
 
@@ -38,7 +42,7 @@ namespace doancnpm
         private void iconButton1_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            OpenChildForm(new showadmin(), btn);
+            OpenChildForm(new ThongtinNv(Iduser1), btn);
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

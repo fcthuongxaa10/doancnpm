@@ -83,7 +83,6 @@
             this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.iconPictureBox2.TabIndex = 2;
             this.iconPictureBox2.TabStop = false;
-            this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
             // iconButton2
             // 
@@ -115,7 +114,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(218, 22);
             this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // buttonDN
             // 
@@ -133,6 +131,7 @@
             this.buttonDN.Text = "LOGIN";
             this.buttonDN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDN.UseVisualStyleBackColor = true;
+            this.buttonDN.Click += new System.EventHandler(this.buttonDN_Click);
             // 
             // dangnhap
             // 

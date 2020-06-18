@@ -11,10 +11,11 @@ using System.Windows.Forms;
 
 namespace doancnpm
 {
-    public partial class showadmin : Form
+    public partial class ThongtinNv : Form
+     
     {
         private int Iduser;
-        public showadmin(int s)
+        public ThongtinNv(int s)
         {
             Iduser1=s;
             InitializeComponent();
@@ -22,9 +23,8 @@ namespace doancnpm
 
         public int Iduser1 { get => Iduser; set => Iduser = value; }
 
-        
 
-        private void showadmin_Load(object sender, EventArgs e)
+        private void ThongtinNv_Load(object sender, EventArgs e)
         {
             Model1 db = new Model1();
             var li = db.USERs.Where(p => Iduser1 == p.ID).FirstOrDefault();
@@ -33,7 +33,7 @@ namespace doancnpm
             txtId.Text = Iduser1.ToString();
             txtaddress.Text = li.Diachi;
             dateTimePicker1.Value = li.NgaySinh;
-            if (radioButton1.Checked)
+            if(radioButton1.Checked)
             {
                 radioButton1.Checked = true;
             }
