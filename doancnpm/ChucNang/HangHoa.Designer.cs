@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.buttonsearchacc = new FontAwesome.Sharp.IconButton();
             this.buttonupdateacc = new FontAwesome.Sharp.IconButton();
             this.buttondeleteacc = new FontAwesome.Sharp.IconButton();
             this.buttonaddacc = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.buttonsearchacc);
             this.panel1.Controls.Add(this.buttonupdateacc);
             this.panel1.Controls.Add(this.buttondeleteacc);
@@ -54,13 +54,21 @@
             this.panel1.Size = new System.Drawing.Size(706, 514);
             this.panel1.TabIndex = 1;
             // 
-            // textBox1
+            // dataGridView1
             // 
-            this.textBox1.Location = new System.Drawing.Point(419, 55);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
-            this.textBox1.TabIndex = 20;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(42, 88);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(601, 395);
+            this.dataGridView1.TabIndex = 21;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(419, 55);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(140, 20);
+            this.txtSearch.TabIndex = 20;
             // 
             // buttonsearchacc
             // 
@@ -84,6 +92,7 @@
             this.buttonsearchacc.Text = "SEARCH";
             this.buttonsearchacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonsearchacc.UseVisualStyleBackColor = false;
+            this.buttonsearchacc.Click += new System.EventHandler(this.buttonsearchacc_Click);
             // 
             // buttonupdateacc
             // 
@@ -107,6 +116,7 @@
             this.buttonupdateacc.Text = "UPDATE";
             this.buttonupdateacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonupdateacc.UseVisualStyleBackColor = false;
+            this.buttonupdateacc.Click += new System.EventHandler(this.buttonupdateacc_Click);
             // 
             // buttondeleteacc
             // 
@@ -130,6 +140,7 @@
             this.buttondeleteacc.Text = "DELETE";
             this.buttondeleteacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttondeleteacc.UseVisualStyleBackColor = false;
+            this.buttondeleteacc.Click += new System.EventHandler(this.buttondeleteacc_Click);
             // 
             // buttonaddacc
             // 
@@ -153,14 +164,7 @@
             this.buttonaddacc.Text = "ADD";
             this.buttonaddacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonaddacc.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 88);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(601, 395);
-            this.dataGridView1.TabIndex = 21;
+            this.buttonaddacc.Click += new System.EventHandler(this.buttonaddacc_Click);
             // 
             // HangHoa
             // 
@@ -184,7 +188,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private FontAwesome.Sharp.IconButton buttonsearchacc;
         private FontAwesome.Sharp.IconButton buttonupdateacc;
         private FontAwesome.Sharp.IconButton buttondeleteacc;

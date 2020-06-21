@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CBBItems.cs" />
     <Compile Include="ChucNang\Acount.cs">
       <SubType>Form</SubType>
     </Compile>
