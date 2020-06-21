@@ -1,10 +1,10 @@
 namespace doancnpm
 {
-  
     using doancnpm.DB;
-    using System;
-    using System.Data.Entity;
-    using System.Linq;
+using System;
+using System.Data.Entity;
+using System.Linq;
+
 
     public class Model4 : DbContext
     {

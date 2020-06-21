@@ -23,7 +23,7 @@ namespace doancnpm
             dataGridView1.DataSource = li.ToList();
         }
 
-        private void Show()
+        private void Showdtg()
         {
             Model4 db = new Model4();
             var l = db.MatHangs.Select(p => p);

@@ -19,7 +19,8 @@ namespace doancnpm.DB
         [Key, Column(Order = 1)]
         public string MaHD { get; set; }
         public string SoLuong { get; set; }
-   
+        public decimal Tien { get; set; }
+
 
         public virtual HoaDonBanHang HoaDonBanHang { get; set; }
         public virtual MatHang MatHang { get; set; }

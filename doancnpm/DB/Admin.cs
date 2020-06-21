@@ -62,6 +62,13 @@ namespace doancnpm
             Button btn = sender as Button;
             OpenChildForm(new Acount(), btn);
         }
-     
+
+        private void buttondangxuat_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            dangnhap dn = new dangnhap();
+            dn.ShowDialog();
+            
+        }
     }
 }

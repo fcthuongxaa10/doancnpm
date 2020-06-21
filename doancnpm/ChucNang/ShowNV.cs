@@ -23,7 +23,7 @@ namespace doancnpm
             try
             {
                 themnhanvien f = new themnhanvien(Convert.ToInt32(null));
-                f.D += new themnhanvien.dele(Show);
+                f.D += new themnhanvien.dele(Showdtg);
                 f.ShowDialog();
 
             }
@@ -43,7 +43,7 @@ namespace doancnpm
                     {
                         int id =Convert.ToInt32(r[0].Cells["id"].Value.ToString());
                         themnhanvien f = new themnhanvien(id);
-                    f.D += new themnhanvien.dele(Show);
+                    f.D += new themnhanvien.dele(Showdtg);
                         f.ShowDialog();
                     }
                     else
@@ -57,7 +57,7 @@ namespace doancnpm
                     return;
                 }
             }
-        public void Show()
+        public void Showdtg()
         {
             Model4 DB = new Model4();
             var li = DB.USERs.Select(p => new { p.IDUser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
