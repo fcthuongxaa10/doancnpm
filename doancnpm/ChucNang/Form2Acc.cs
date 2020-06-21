@@ -76,13 +76,9 @@ namespace doancnpm.ChucNang
                             PassWord = textPassword.Text,
                             NgayLap = dateTimePicker1.Value
                         };
-
-
                         db.Accounts.Add(ac);
-
                         db.SaveChanges();
-                       
-
+   
                         MessageBox.Show("Thêm thành công!");
                     }
 
@@ -124,22 +120,7 @@ namespace doancnpm.ChucNang
         {
             this.Close();
         }
-        public bool Check(int ID, int IDUser, int IDGroup, string UserName, string password, DateTime NgayLap
-            )
-        {
-            Model4 db = new Model4();
-            var l = db.Accounts.Select(p => p);
-            if (ID==0 ||IDUser==0|| IDGroup==0|| UserName==""||password==""||NgayLap==null)
-            {
-                MessageBox.Show("Bạn phải nhập đầy đủ thông tin");
-                return false;
-            }
-            else if (l.ToList().Count == 1)
-            {
-                MessageBox.Show(" Sinh viên này đã tồn tại vui lòng nhập lại");
-                return false;
-            }
-            else return true;
+       
         }
     }
-}
+

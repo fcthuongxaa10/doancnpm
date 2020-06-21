@@ -13,7 +13,7 @@ namespace doancnpm.DB
     {
         [Key]
         [Required]
-        public int IDUser { set; get; }
+        public int ID { set; get; }
         [Required]
         [StringLength(255)]
         public string HoTen { set; get; }

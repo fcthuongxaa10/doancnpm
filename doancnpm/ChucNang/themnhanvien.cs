@@ -38,10 +38,10 @@ namespace doancnpm
             {
                 foreach (USER i in db.USERs)
                 {
-                    if (i.IDUser == Id)
+                    if (i.IDuser == Id)
                     {
-                        var li = db.USERs.Where(p => p.IDUser == Id).FirstOrDefault();
-                        txtID.Text = (li.IDUser).ToString();
+                        var li = db.USERs.Where(p => p.IDuser == Id).FirstOrDefault();
+                        txtID.Text = (li.IDuser).ToString();
                         txttenNv.Text = li.HoTen;
                         txtDiaChi.Text = li.Diachi;
                         txtSDT.Text = li.SDT;
@@ -79,7 +79,7 @@ namespace doancnpm
                     {
                         USER s = new USER()
                         {
-                            IDUser = Convert.ToInt32(txtID.Text),
+                            IDuser = Convert.ToInt32(txtID.Text),
                             HoTen = txttenNv.Text,
                             Diachi = txtDiaChi.Text,
                             SDT = txtSDT.Text,
@@ -92,7 +92,7 @@ namespace doancnpm
                         };
                         DB.USERs.Add(s);
                         DB.SaveChanges();
-                        var li1 = DB.USERs.Select(p => new { p.IDUser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+                        var li1 = DB.USERs.Select(p => new { p.IDuser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
                         MessageBox.Show("Thêm Thành Công");
                     }
                     catch (Exception)
@@ -104,9 +104,9 @@ namespace doancnpm
                 {
                     try
                     {
-                        var li = DB.USERs.Where(p => p.IDUser == Id).FirstOrDefault();
+                        var li = DB.USERs.Where(p => p.IDuser == Id).FirstOrDefault();
                         {
-                            li.IDUser = Convert.ToInt32(txtID.Text);
+                            li.IDuser = Convert.ToInt32(txtID.Text);
                             li.HoTen = txttenNv.Text;
                             li.Diachi = txtDiaChi.Text;
                             li.SDT = txtSDT.Text;
@@ -118,7 +118,7 @@ namespace doancnpm
                             li.GioiTinh = radioButton1.Checked;
                         }
                         DB.SaveChanges();
-                        var li1 = DB.USERs.Select(p => new { p.IDUser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+                        var li1 = DB.USERs.Select(p => new { p.IDuser, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
                         MessageBox.Show("OK");                 
                             }
                     catch (Exception)

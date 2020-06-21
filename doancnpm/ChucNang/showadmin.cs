@@ -27,7 +27,7 @@ namespace doancnpm
         private void showadmin_Load(object sender, EventArgs e)
         {
             Model4 db = new Model4();
-            var li = db.USERs.Where(p => Iduser1 == p.IDUser).FirstOrDefault();
+            var li = db.USERs.Where(p => Iduser1 == p.IDuser).FirstOrDefault();
             txtname.Text = li.HoTen;
             txtphone.Text = li.SDT;
             txtId.Text = Iduser1.ToString();
@@ -41,6 +41,7 @@ namespace doancnpm
             {
                 radioButton2.Checked = true;
             }
+          //  txtusername.Text=li.Accounts.
         }
     }
 }
