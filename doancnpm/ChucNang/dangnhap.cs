@@ -31,12 +31,13 @@ namespace doancnpm
                 var li = db.Accounts.Where(p => p.Username == textBox1.Text && p.PassWord == textBox2.Text).FirstOrDefault();
                 Id = li.IDGroup;
                 iduser = li.IDuser;
+                
             }
             catch (Exception)
             {
 
             }
-
+            MessageBox.Show(Id.ToString() + 1);
             if (Id!=0)
             {
                 if(Id==1)

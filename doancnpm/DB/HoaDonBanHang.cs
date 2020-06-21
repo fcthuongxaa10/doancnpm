@@ -22,7 +22,7 @@ namespace doancnpm.DB
         public decimal TongTien { set; get; }
         [Required]
        
-        public virtual ICollection<ChiTietHoaDon> MatHangs { set; get; }
+        public virtual ICollection<ChiTietHoaDon> Mathangs { set; get; }
         public int IDNV { set; get; }
         [ForeignKey("IDNV")] 
         public virtual Account Account { get; set; }
