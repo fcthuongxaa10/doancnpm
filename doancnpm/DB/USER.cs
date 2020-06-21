@@ -32,10 +32,10 @@ namespace doancnpm.DB
         public decimal SoTienThuong { set; get; }
         public decimal SoTienPhat { set; get; }
 
-        public virtual ICollection<Account> Account { get; set; }
+        public virtual ICollection<Account> Accounts { get; set; }
         public USER()
         {
-            this.Account = new HashSet<Account>();
+            this.Accounts = new HashSet<Account>();
         }
  
     }

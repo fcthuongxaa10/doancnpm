@@ -92,7 +92,7 @@ namespace doancnpm
                         };
                         DB.USERs.Add(s);
                         DB.SaveChanges();
-                        var li1 = DB.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+                       // var li1 = DB.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
                         MessageBox.Show("Thêm Thành Công");
                     }
                     catch (Exception)

@@ -64,6 +64,7 @@
             this.buttonchamcong.TabIndex = 13;
             this.buttonchamcong.Text = "Chấm Công";
             this.buttonchamcong.UseVisualStyleBackColor = false;
+            this.buttonchamcong.Click += new System.EventHandler(this.buttonchamcong_Click);
             // 
             // buttonsearch
             // 

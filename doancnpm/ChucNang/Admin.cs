@@ -62,6 +62,10 @@ namespace doancnpm
             Button btn = sender as Button;
             OpenChildForm(new Acount(), btn);
         }
-     
+
+        private void buttondoanhthu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

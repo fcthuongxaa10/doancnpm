@@ -17,5 +17,5 @@ namespace doancnpm
             InitializeComponent();
         }
     }
-    kk
+   
 }

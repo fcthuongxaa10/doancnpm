@@ -122,6 +122,7 @@
             this.buttondoanhthu.Text = "Doanh Thu";
             this.buttondoanhthu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttondoanhthu.UseVisualStyleBackColor = false;
+            this.buttondoanhthu.Click += new System.EventHandler(this.buttondoanhthu_Click);
             // 
             // buttonquanlihanghoa
             // 
@@ -216,7 +217,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1371, 134);
             this.panel2.TabIndex = 7;
-        //    this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // buttonback
             // 
@@ -238,7 +238,6 @@
             this.buttonback.TabIndex = 15;
             this.buttonback.Text = "Back";
             this.buttonback.UseVisualStyleBackColor = false;
-    //        this.buttonback.Click += new System.EventHandler(this.iconButton7_Click);
             // 
             // buttondangxuat
             // 
@@ -271,7 +270,6 @@
             this.label1.Size = new System.Drawing.Size(179, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Chào Mừng Lê Trường Sơn";
-       //     this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // iconPictureBox1
             // 
@@ -305,7 +303,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-      //      this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Admin
             // 
@@ -319,7 +316,6 @@
             this.Controls.Add(this.button5);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Admin";
-           // this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);

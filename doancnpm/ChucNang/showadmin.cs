@@ -41,7 +41,7 @@ namespace doancnpm
             {
                 radioButton2.Checked = true;
             }
-            txtusername =li.Account.
+          // var li2 = db.USERs.Select(p => new {p.Accounts.})
         }
     }
 }

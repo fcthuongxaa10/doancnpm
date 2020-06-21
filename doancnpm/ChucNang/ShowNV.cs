@@ -114,5 +114,10 @@ namespace doancnpm
             var li = Db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
             dataGridView1.DataSource = li.ToList();
         }
+
+        private void buttonchamcong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
