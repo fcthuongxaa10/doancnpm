@@ -44,6 +44,7 @@ namespace doancnpm
         {
             Button btn = sender as Button;
             OpenChildForm(new ShowNV(), btn);
+            
         }
 
         private void iconButton3_Click(object sender, EventArgs e)

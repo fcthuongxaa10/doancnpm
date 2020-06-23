@@ -105,5 +105,10 @@ namespace InterfaceDA
         {
             showSubMenu(panelQLNV);
         }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,7 +56,7 @@
             this.button5.BackColor = System.Drawing.Color.DodgerBlue;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(1066, 10);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 37);
             this.button5.TabIndex = 5;
@@ -72,7 +72,7 @@
             this.panel1.Controls.Add(this.buttonthongtincanhan);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 640);
             this.panel1.TabIndex = 6;
@@ -90,7 +90,7 @@
             this.buttonquanliacc.IconSize = 50;
             this.buttonquanliacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonquanliacc.Location = new System.Drawing.Point(0, 362);
-            this.buttonquanliacc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonquanliacc.Margin = new System.Windows.Forms.Padding(2);
             this.buttonquanliacc.Name = "buttonquanliacc";
             this.buttonquanliacc.Rotation = 0D;
             this.buttonquanliacc.Size = new System.Drawing.Size(150, 64);
@@ -113,7 +113,7 @@
             this.buttondoanhthu.IconSize = 50;
             this.buttondoanhthu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttondoanhthu.Location = new System.Drawing.Point(0, 300);
-            this.buttondoanhthu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttondoanhthu.Margin = new System.Windows.Forms.Padding(2);
             this.buttondoanhthu.Name = "buttondoanhthu";
             this.buttondoanhthu.Rotation = 0D;
             this.buttondoanhthu.Size = new System.Drawing.Size(150, 64);
@@ -135,7 +135,7 @@
             this.buttonquanlihanghoa.IconSize = 50;
             this.buttonquanlihanghoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonquanlihanghoa.Location = new System.Drawing.Point(0, 242);
-            this.buttonquanlihanghoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonquanlihanghoa.Margin = new System.Windows.Forms.Padding(2);
             this.buttonquanlihanghoa.Name = "buttonquanlihanghoa";
             this.buttonquanlihanghoa.Rotation = 0D;
             this.buttonquanlihanghoa.Size = new System.Drawing.Size(150, 64);
@@ -158,7 +158,7 @@
             this.buttonquanlinhanvien.IconSize = 50;
             this.buttonquanlinhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonquanlinhanvien.Location = new System.Drawing.Point(0, 176);
-            this.buttonquanlinhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonquanlinhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.buttonquanlinhanvien.Name = "buttonquanlinhanvien";
             this.buttonquanlinhanvien.Rotation = 0D;
             this.buttonquanlinhanvien.Size = new System.Drawing.Size(154, 69);
@@ -181,7 +181,7 @@
             this.buttonthongtincanhan.IconSize = 50;
             this.buttonthongtincanhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonthongtincanhan.Location = new System.Drawing.Point(0, 114);
-            this.buttonthongtincanhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonthongtincanhan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonthongtincanhan.Name = "buttonthongtincanhan";
             this.buttonthongtincanhan.Rotation = 0D;
             this.buttonthongtincanhan.Size = new System.Drawing.Size(150, 64);
@@ -195,7 +195,7 @@
             // 
             this.pictureBox1.Image = global::doancnpm.Properties.Resources.unnamed;
             this.pictureBox1.Location = new System.Drawing.Point(24, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,7 +211,7 @@
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1143, 109);
             this.panel2.TabIndex = 7;
@@ -230,7 +230,7 @@
             this.buttonback.IconSize = 20;
             this.buttonback.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonback.Location = new System.Drawing.Point(0, 0);
-            this.buttonback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonback.Margin = new System.Windows.Forms.Padding(2);
             this.buttonback.Name = "buttonback";
             this.buttonback.Rotation = 0D;
             this.buttonback.Size = new System.Drawing.Size(86, 41);
@@ -252,7 +252,7 @@
             this.buttondangxuat.IconSize = 50;
             this.buttondangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttondangxuat.Location = new System.Drawing.Point(958, 0);
-            this.buttondangxuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttondangxuat.Margin = new System.Windows.Forms.Padding(2);
             this.buttondangxuat.Name = "buttondangxuat";
             this.buttondangxuat.Rotation = 0D;
             this.buttondangxuat.Size = new System.Drawing.Size(112, 41);
@@ -280,7 +280,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconSize = 52;
             this.iconPictureBox1.Location = new System.Drawing.Point(410, 6);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(52, 55);
             this.iconPictureBox1.TabIndex = 0;
@@ -290,7 +290,7 @@
             // 
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(154, 114);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(915, 497);
             this.panel3.TabIndex = 8;
@@ -299,7 +299,7 @@
             // 
             this.pictureBox2.Image = global::doancnpm.Properties.Resources.shop_stock_market_business_logo_icon_design_vector_229267541;
             this.pictureBox2.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(913, 495);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -317,7 +317,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button5);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);

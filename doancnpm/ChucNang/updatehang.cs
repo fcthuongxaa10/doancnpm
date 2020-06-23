@@ -86,22 +86,26 @@ namespace doancnpm
         public bool Check(string MH, string TH, string SL, string Gia, string NNK, object DVT )
         {
             Model2 db = new Model2();
-            var l = db.MatHangs.Select(p => new { p.MaHang, p.TenHang, p.SoLuongSp, p.Gia, p.NgayNhapKho, p.DonViTinh.TenDonViTinh });
+            var l = db.MatHangs.Where(p => p.MaHang == MH).Select(p => new { p.MaHang, p.TenHang, p.SoLuongSp, p.Gia, p.NgayNhapKho, p.DonViTinh.TenDonViTinh });
             if (MH == "" || TH == "" || SL == "" || Gia == ""|| NNK ==""|| DVT == null)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return false;
             }
-            else if (l.ToList().Count == 1)
+            else
             {
-                MessageBox.Show("Mặt hàng này đã tồn tại vui lòng nhập lại");
-                return false;
+                if (l.ToList().Count == 1)
+                {
+                    MessageBox.Show("Mặt hàng này đã tồn tại vui lòng nhập lại");
+                    return false;       
+                }
+                else return true;
             }
-            else return true;
+            
         }
         public void SetDB()
         {
-            Model2 db = new Model2();
+            Model2 db = new Model2(); 
             if (MaHang== "add")
             {
                 if (Check(txtMahang.Text, txtTensanpham.Text, txtSoluong.Text ,txtGia.Text, dtNgaynhapkho.Value.ToString(), cbbDonvitinh.SelectedItem))
@@ -150,7 +154,7 @@ namespace doancnpm
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Nhập sai định dạng!");
+                    MessageBox.Show("Nhập sai");
                 }
             }
         }

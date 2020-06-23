@@ -294,6 +294,7 @@
             this.Controls.Add(this.panelMenu);
             this.Name = "FormAdmin";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormAdmin_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelQLAC.ResumeLayout(false);
             this.panelQLHH.ResumeLayout(false);
