@@ -13,8 +13,35 @@ namespace codefirt
 {
     public class creadDB : CreateDatabaseIfNotExists<Model1>
     {
+
         protected override void Seed(Model1 context)
         {
+            context.USERs.Add(new USER
+            {
+                ID = 102180,
+                HoTen = "Lê Trường Sơn",
+                SDT = "0326416995",
+                SoNgayLam = 0,
+                LuongCB = 2500000,
+                GioiTinh = true,
+                NgaySinh = new DateTime(1999, 2, 2),
+                Diachi = "quảng trị",
+                SoTienPhat = 0,
+                SoTienThuong = 0,
+            });
+            context.USERs.Add(new USER
+            {
+                ID = 102181,
+                HoTen = "Lê Trường Quân",
+                SDT = "0393415991",
+                SoNgayLam = 0,
+                LuongCB = 2500000,
+                GioiTinh = false,
+                NgaySinh = new DateTime(1999, 3, 3),
+                Diachi = "quảng trị",
+                SoTienPhat = 0,
+                SoTienThuong = 0,
+            });
             context.DonViTinhs.Add(new DonViTinh
             {
                 IDDonViTinh = 11,
@@ -131,32 +158,7 @@ namespace codefirt
                 TongTien = 150000,
                 IDNV = 112,
             });
-            context.USERs.Add(new USER
-            {
-                ID = 102180,
-                HoTen = "Lê Trường Sơn",
-                SDT = "0326416995",
-                SoNgayLam = 0,
-                LuongCB =2500000,
-                GioiTinh = true,
-                NgaySinh =new DateTime(1999,2,2),
-                Diachi = "quảng trị",
-                SoTienPhat =0,
-                SoTienThuong=0,
-            });
-            context.USERs.Add(new USER
-            {
-                ID= 102181,
-                HoTen = "Lê Trường Quân" ,
-                SDT = "0393415991",
-                SoNgayLam = 0,
-                LuongCB = 2500000,
-                GioiTinh =false,
-                NgaySinh = new DateTime(1999, 3, 3),
-                Diachi = "quảng trị",
-                SoTienPhat = 0,
-                SoTienThuong = 0,
-            });
+           
         }
 
     }
