@@ -1,0 +1,134 @@
+C:\Users\Admin\source\repos\doancnpm\doancnpm\bin\Debug\doancnpm.exe.config
+C:\Users\Admin\source\repos\doancnpm\doancnpm\bin\Debug\doancnpm.exe
+C:\Users\Admin\source\repos\doancnpm\doancnpm\bin\Debug\doancnpm.pdb
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.Form1.resources
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.Form2.resources
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.Form3.resources
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.Form4.resources
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.Properties.Resources.resources
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.exe
+C:\Users\Admin\source\repos\doancnpm\doancnpm\obj\Debug\doancnpm.pdb
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\bin\Debug\doancnpm.exe.config
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\bin\Debug\doancnpm.exe
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\bin\Debug\doancnpm.pdb
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.csprojAssemblyReference.cache
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.Form1.resources
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.Form2.resources
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.Form3.resources
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.Form4.resources
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.Properties.Resources.resources
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.GenerateResource.cache
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.CoreCompileInputs.cache
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.exe
+E:\ADmin\Nam 2\KI 2\c#\doancnpm\doancnpm\obj\Debug\doancnpm.pdb
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\bin\Debug\doancnpm.exe.config
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\bin\Debug\doancnpm.exe
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\bin\Debug\doancnpm.pdb
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.ChamCong.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.dangnhap.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.nhanvien.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.Themmathang.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.Properties.Resources.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.themnhanvien.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.exe
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.pdb
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.Admin.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.ChamCongChiTiet.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.updatehang.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.updatenhanvien.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\doancnpm\obj\Debug\doancnpm.ThemAccount.resources
+E:\doancnpm\doancnpm\bin\Debug\doancnpm.exe.config
+E:\doancnpm\doancnpm\bin\Debug\doancnpm.exe
+E:\doancnpm\doancnpm\bin\Debug\doancnpm.pdb
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.csprojAssemblyReference.cache
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.Chamcong.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.dangnhap.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.Admin.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.ThemAccount.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.Properties.Resources.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.themnhanvien.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.updatehang.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.GenerateResource.cache
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.CoreCompileInputs.cache
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.exe
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.pdb
+E:\doancnpm\doancnpm\bin\Debug\FontAwesome.Sharp.dll
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.CopyComplete
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.ShowNV.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.showadmin.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.HangHoa.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.Acount.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.NhanVien2.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.laphoadon.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.Doanhthu.resources
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.timeskip.resources
+E:\doancnpm\doancnpm\bin\Debug\EntityFramework.dll
+E:\doancnpm\doancnpm\bin\Debug\EntityFramework.SqlServer.dll
+E:\doancnpm\doancnpm\bin\Debug\EntityFramework.xml
+E:\doancnpm\doancnpm\bin\Debug\EntityFramework.SqlServer.xml
+E:\doancnpm\doancnpm\obj\Debug\doancnpm.ThongtinNv.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\doancnpm.exe.config
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\doancnpm.exe
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\doancnpm.pdb
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.dll
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.xml
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Acount.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Chamcong.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.dangnhap.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Admin.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Doanhthu.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.HangHoa.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.laphoadon.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.NhanVien2.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.showadmin.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.ShowNV.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.ThemAccount.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.ThongtinNv.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Properties.Resources.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.themnhanvien.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.timeskip.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.updatehang.resources
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.CopyComplete
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.exe
+C:\Users\HP\Downloads\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.pdb
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\doancnpm.exe.config
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\doancnpm.exe
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\doancnpm.pdb
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.dll
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.SqlServer.dll
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\FontAwesome.Sharp.dll
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.xml
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\bin\Debug\EntityFramework.SqlServer.xml
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.csprojAssemblyReference.cache
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Acount.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Chamcong.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.dangnhap.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Admin.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Doanhthu.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.HangHoa.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.laphoadon.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.NhanVien2.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.showadmin.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.ShowNV.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.ThemAccount.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.ThongtinNv.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.Properties.Resources.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.themnhanvien.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.timeskip.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.updatehang.resources
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.GenerateResource.cache
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.CoreCompileInputs.cache
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.csproj.CopyComplete
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.exe
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.pdb
+E:\doancnpm-20200623T130834Z-001\doancnpm\doancnpm\doancnpm\obj\Debug\doancnpm.ThemHD.resources

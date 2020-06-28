@@ -1,0 +1,9 @@
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\bin\Debug\dangnhap.exe.config
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\bin\Debug\dangnhap.exe
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\bin\Debug\dangnhap.pdb
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\obj\Debug\dangnhap.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\obj\Debug\dangnhap.Properties.Resources.resources
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\obj\Debug\dangnhap.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\obj\Debug\dangnhap.exe
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\obj\Debug\dangnhap.pdb
+C:\Users\HP\Downloads\doancnpm-20200518T170900Z-001\doancnpm\dangnhap\obj\Debug\dangnhap.Form1.resources
