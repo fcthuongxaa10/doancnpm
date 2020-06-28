@@ -1,4 +1,5 @@
-﻿using doancnpm.DB;
+﻿using doancnpm.BLL;
+using doancnpm.DB;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +23,7 @@ namespace doancnpm
         {
             try
             {
-                themnhanvien f = new themnhanvien(Convert.ToInt32(null));
+                themnhanvien f = new themnhanvien(0);
                 f.D += new themnhanvien.dele(Show);
                 f.ShowDialog();
 
@@ -57,38 +58,30 @@ namespace doancnpm
                     return;
                 }
             }
-        public void Show()
+        public  void Show()
         {
             dataGridView1.DataSource = BLL.QuanLiNhanVien_BLL.Instance.ShowThongTinNhanVien();
         }
 
         private void buttonxoanv_Click(object sender, EventArgs e)
         {
-         
-                DataGridViewSelectedRowCollection r = dataGridView1.SelectedRows;
-                Model1 db = new Model1();
-                try
-                {
-                    foreach (USER i in db.USERs)
-                    {
-                        foreach (DataGridViewRow j in r)
-                        {
-                            if (i.ID == Convert.ToInt32( j.Cells["ID"].Value.ToString()))
-                            {
-                                USER t = i;
-                                db.USERs.Remove(t);
-                            }
 
-                        }
-                    }
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Xin Kiem Tra Lai");
-                }
-                db.SaveChanges();
-                var li1 = db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
-                dataGridView1.DataSource = li1.ToList();
+            DataGridViewSelectedRowCollection r = dataGridView1.SelectedRows;
+            Model1 db = new Model1();
+            if(r==null)
+            {
+                MessageBox.Show("Mời chọn nhân viên cần xóa");
+            }
+            if (BLL.QuanLiNhanVien_BLL.Instance.DelNV(r))
+            {
+                MessageBox.Show("Xóa thành công");
+            }
+            else
+            {
+                MessageBox.Show("có lỗi");
+            }
+            var li1 = db.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+            dataGridView1.DataSource = li1.ToList();
           
         }
 
@@ -103,10 +96,11 @@ namespace doancnpm
         {
           dataGridView1.DataSource= BLL.QuanLiNhanVien_BLL.Instance.ShowThongTinNhanVien();
         }
-
         private void buttonchamcong_Click(object sender, EventArgs e)
         {
 
         }
+
+     
     }
 }

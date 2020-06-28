@@ -18,15 +18,6 @@ namespace doancnpm
             InitializeComponent();
         }
 
-        private void groupBox7_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         public void ShowDGV()
         {

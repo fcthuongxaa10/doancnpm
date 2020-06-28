@@ -73,11 +73,7 @@ namespace doancnpm
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return false;
             }
-            else if (l.ToList().Count == 1)
-            {
-                MessageBox.Show("Thông tin đã tồn tại vui lòng nhập lại");
-                return false;
-            }
+         
         
             else return true;
         }
@@ -90,13 +86,6 @@ namespace doancnpm
             {
                 if (Check(textID.Text, textIDNV.Text, textGr.Text, textUsername.Text, textpassword.Text, dateTimePicker1.Value))
                 {
-
-
-                    //foreach (string m in list)
-                    //{
-                    //    if (textUsername.Text != m)
-                    //    {
-
                     Account ac = new Account()
                     {
                         ID = Convert.ToInt32(textID.Text),
@@ -106,10 +95,6 @@ namespace doancnpm
                         PassWord = textpassword.Text,
                         NgayLap = dateTimePicker1.Value
                     };
-
-
-
-
                     db.Accounts.Add(ac);
                     db.SaveChanges();
 
@@ -126,12 +111,7 @@ namespace doancnpm
                 try
                 {
                     var ac1 = db.Accounts.Where(p => p.ID == IDA1).FirstOrDefault();
-                    //foreach (string k in list)
-                    //{
-                    //    if (textUsername.Text == k)
-                    //        MessageBox.Show("NO");
-                    //    else
-                    //    {
+                   
                             ac1.ID = Convert.ToInt32(textID.Text);
                             ac1.IDGroup = Convert.ToInt32(textGr.Text);
                             ac1.IDuser = Convert.ToInt32(textIDNV.Text);
@@ -141,11 +121,7 @@ namespace doancnpm
 
 
                             db.SaveChanges();
-                            MessageBox.Show("Chỉnh sửa thành công!");
-
-
-                        
-                    
+                            MessageBox.Show("Chỉnh sửa thành công!");  
                 }
                 catch (Exception)
                 {

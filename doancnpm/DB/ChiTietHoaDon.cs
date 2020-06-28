@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace doancnpm.DB
 {
-    //abc
+   
     [Table("ChiTietHoaDon")]
     public class ChiTietHoaDon
     {
@@ -17,6 +17,7 @@ namespace doancnpm.DB
         public string MaHang { get; set; }
 
         [Key, Column(Order = 1)]
+        [StringLength(50)]
         public string MaHD { get; set; }
         public string SoLuong { get; set; }
    

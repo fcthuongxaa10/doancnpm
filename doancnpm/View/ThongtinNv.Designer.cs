@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtpasss = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -52,10 +48,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
-            this.groupBox1.Controls.Add(this.txtpasss);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.txtusername);
-            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -76,39 +68,6 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hồ Sơ Nhân Viên";
-//            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // txtpasss
-            // 
-            this.txtpasss.Location = new System.Drawing.Point(127, 193);
-            this.txtpasss.Name = "txtpasss";
-            this.txtpasss.Size = new System.Drawing.Size(192, 22);
-            this.txtpasss.TabIndex = 18;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(38, 198);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(92, 17);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "PASS WORD";
-            // 
-            // txtusername
-            // 
-            this.txtusername.Location = new System.Drawing.Point(127, 146);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(192, 22);
-            this.txtusername.TabIndex = 16;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(38, 151);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 17);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "USER NAME";
             // 
             // radioButton2
             // 
@@ -239,10 +198,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtpasss;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtusername;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

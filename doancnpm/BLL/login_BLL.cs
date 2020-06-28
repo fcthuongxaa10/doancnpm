@@ -28,17 +28,9 @@ namespace doancnpm.BLL
             int Id;
             Model1 Db = new Model1();
             var li = Db.Accounts.Where(p => p.Username == username && p.PassWord == pass).FirstOrDefault();
-            Id = li.IDGroup;
-                if (Id == 1)
-                {
-                    return Id;
-                }
-                else
-                {
-                    return Id;
-                }
-                
-            
+                Id = li.IDGroup;
+            return Id;
+             
         }
         public int GetID(string s, string pa)
         {

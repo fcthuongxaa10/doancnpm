@@ -40,27 +40,35 @@ namespace doancnpm
 
         private void buttonDN_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text !="" && textBox2.Text != "")
-            {
-
+            Model1 db = new Model1();
+            
+            if (textBox1.Text !="" && textBox2.Text!="")
+            {       
                 int iduser = BLL.login_BLL.Instance.GetID(textBox1.Text, textBox2.Text);
-                if (BLL.login_BLL.Instance.CheckAcc(textBox1.Text, textBox2.Text) ==1)
-                {
-                    
-                    Admin f = new Admin(iduser);
-                    f.ShowDialog();
-                }
-                else
-                {
-                    NhanVien2 f = new NhanVien2(iduser);
-                    f.ShowDialog();
-                }                    
-                     
+                if (BLL.login_BLL.Instance.CheckAcc(textBox1.Text, textBox2.Text)==1)
+                    {
+               
+                        Admin f = new Admin(iduser);
+                    f.FormClosed += new FormClosedEventHandler(fclose);
+                        f.Show();
+                    this.Hide();
+                    }
+                    else
+                    {
+                        NhanVien2 f = new NhanVien2(iduser);
+                    f.FormClosed += new FormClosedEventHandler(fclose);
+                    f.Show();
+                    this.Hide();
+                }         
             } 
             else
             {
                 MessageBox.Show("nhap tai khoan hoac mat khau");
             }
+        }
+        private void fclose(object sender, EventArgs e)
+        {
+            this.Show();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using doancnpm.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -66,6 +67,30 @@ namespace doancnpm
         private void buttondoanhthu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttondangxuat_Click(object sender, EventArgs e)
+        {
+            dangnhap f = new dangnhap();
+            f.FormClosed += new FormClosedEventHandler(fclose);
+            f.Show();
+            this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            Model1 db = new Model1();
+            var li = db.USERs.Where(p => p.ID == Iduser1).FirstOrDefault();
+            label1.Text = "WELCOME " + li.HoTen;
+        }
+        private void fclose(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void buttonback_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

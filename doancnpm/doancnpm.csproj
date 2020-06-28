@@ -58,9 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\HangHoa_BLL.cs" />
+    <Compile Include="CBBItems.cs" />
     <Compile Include="BLL\login_BLL.cs" />
     <Compile Include="BLL\Showthongtin_BLL.cs" />
     <Compile Include="BLL\QuanLiNhanVien_BLL.cs" />
+    <Compile Include="Program - Copy.cs" />
     <Compile Include="View\Acount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,12 +166,6 @@
     <Compile Include="View\ThongtinNv.Designer.cs">
       <DependentUpon>ThongtinNv.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\ThemHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\ThemHD.Designer.cs">
-      <DependentUpon>ThemHD.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="View\Acount.resx">
       <DependentUpon>Acount.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\updatehang.resx">
       <DependentUpon>updatehang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\ThemHD.resx">
-      <DependentUpon>ThemHD.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

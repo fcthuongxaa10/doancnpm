@@ -217,6 +217,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1371, 134);
             this.panel2.TabIndex = 7;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // buttonback
             // 
@@ -238,6 +239,7 @@
             this.buttonback.TabIndex = 15;
             this.buttonback.Text = "Back";
             this.buttonback.UseVisualStyleBackColor = false;
+            this.buttonback.Click += new System.EventHandler(this.buttonback_Click);
             // 
             // buttondangxuat
             // 
@@ -251,7 +253,7 @@
             this.buttondangxuat.IconColor = System.Drawing.Color.White;
             this.buttondangxuat.IconSize = 50;
             this.buttondangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttondangxuat.Location = new System.Drawing.Point(1277, 0);
+            this.buttondangxuat.Location = new System.Drawing.Point(1234, 7);
             this.buttondangxuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttondangxuat.Name = "buttondangxuat";
             this.buttondangxuat.Rotation = 0D;
@@ -260,6 +262,7 @@
             this.buttondangxuat.Text = "Đăng Xuất";
             this.buttondangxuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttondangxuat.UseVisualStyleBackColor = false;
+            this.buttondangxuat.Click += new System.EventHandler(this.buttondangxuat_Click);
             // 
             // label1
             // 

@@ -18,10 +18,9 @@ namespace doancnpm.DB
         public string MaHD { set; get; }
         [Required]
         public DateTime NgayLapHD { set; get; }
-        [Required]
+       // [Required]
         public decimal TongTien { set; get; }
-        [Required]
-       
+        //[Required]
         public virtual ICollection<ChiTietHoaDon> Mathangs { set; get; }
         public int IDNV { set; get; }
         [ForeignKey("IDNV")] 

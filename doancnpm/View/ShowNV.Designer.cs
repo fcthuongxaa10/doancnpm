@@ -40,9 +40,9 @@
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(785, 36);
+            this.txtsearch.Location = new System.Drawing.Point(465, 43);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(127, 22);
+            this.txtsearch.Size = new System.Drawing.Size(137, 22);
             this.txtsearch.TabIndex = 12;
             // 
             // buttonchamcong
@@ -57,7 +57,7 @@
             this.buttonchamcong.IconColor = System.Drawing.Color.White;
             this.buttonchamcong.IconSize = 20;
             this.buttonchamcong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonchamcong.Location = new System.Drawing.Point(785, 466);
+            this.buttonchamcong.Location = new System.Drawing.Point(785, 528);
             this.buttonchamcong.Name = "buttonchamcong";
             this.buttonchamcong.Rotation = 0D;
             this.buttonchamcong.Size = new System.Drawing.Size(133, 50);
@@ -78,7 +78,7 @@
             this.buttonsearch.IconColor = System.Drawing.Color.White;
             this.buttonsearch.IconSize = 20;
             this.buttonsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonsearch.Location = new System.Drawing.Point(633, 31);
+            this.buttonsearch.Location = new System.Drawing.Point(633, 33);
             this.buttonsearch.Name = "buttonsearch";
             this.buttonsearch.Rotation = 0D;
             this.buttonsearch.Size = new System.Drawing.Size(133, 32);
@@ -99,7 +99,7 @@
             this.buttoneditnv.IconColor = System.Drawing.Color.White;
             this.buttoneditnv.IconSize = 20;
             this.buttoneditnv.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttoneditnv.Location = new System.Drawing.Point(785, 398);
+            this.buttoneditnv.Location = new System.Drawing.Point(785, 440);
             this.buttoneditnv.Name = "buttoneditnv";
             this.buttoneditnv.Rotation = 0D;
             this.buttoneditnv.Size = new System.Drawing.Size(133, 50);
@@ -120,7 +120,7 @@
             this.buttonxoanv.IconColor = System.Drawing.Color.White;
             this.buttonxoanv.IconSize = 20;
             this.buttonxoanv.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonxoanv.Location = new System.Drawing.Point(785, 323);
+            this.buttonxoanv.Location = new System.Drawing.Point(785, 350);
             this.buttonxoanv.Name = "buttonxoanv";
             this.buttonxoanv.Rotation = 0D;
             this.buttonxoanv.Size = new System.Drawing.Size(133, 50);
@@ -141,7 +141,7 @@
             this.buttonaddnhanvien.IconColor = System.Drawing.Color.White;
             this.buttonaddnhanvien.IconSize = 20;
             this.buttonaddnhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonaddnhanvien.Location = new System.Drawing.Point(785, 233);
+            this.buttonaddnhanvien.Location = new System.Drawing.Point(785, 262);
             this.buttonaddnhanvien.Name = "buttonaddnhanvien";
             this.buttonaddnhanvien.Rotation = 0D;
             this.buttonaddnhanvien.Size = new System.Drawing.Size(133, 50);
@@ -152,13 +152,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(29, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(737, 497);
             this.dataGridView1.TabIndex = 14;
-//            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ShowNV
             // 

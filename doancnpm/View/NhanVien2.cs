@@ -56,7 +56,20 @@ namespace doancnpm
         {
             Model1 db = new Model1();
             var li = db.USERs.Where(p => p.ID == Iduser1).FirstOrDefault();
-            label1.Text = "WElLCOM" + li.HoTen;
+                label1.Text = "WELCOME " + li.HoTen;
+             
+        }
+
+        private void buttondangxuat_Click(object sender, EventArgs e)
+        {
+            dangnhap f = new dangnhap();
+            f.FormClosed += new FormClosedEventHandler(fclose);
+            f.Show();
+            this.Hide();
+        }
+        private void fclose(object sender, EventArgs e)
+        {
+            this.Show();
         }
     }
 }

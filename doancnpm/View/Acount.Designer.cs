@@ -148,7 +148,7 @@
             this.dtAC.RowTemplate.Height = 28;
             this.dtAC.Size = new System.Drawing.Size(818, 402);
             this.dtAC.TabIndex = 15;
-            this.dtAC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+//            this.dtAC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // iconButton1
             // 

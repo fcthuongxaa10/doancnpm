@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtmaHd = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.buttonhuyhd = new FontAwesome.Sharp.IconButton();
             this.buttoninhoadon = new FontAwesome.Sharp.IconButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -37,6 +42,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.buttonnhaphd = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,9 +50,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtmahang = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtmaHD = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -55,7 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.buttonhuyhd);
             this.panel1.Controls.Add(this.buttoninhoadon);
             this.panel1.Controls.Add(this.textBox3);
@@ -68,6 +73,20 @@
             this.panel1.Size = new System.Drawing.Size(1072, 768);
             this.panel1.TabIndex = 0;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.iconButton1);
+            this.groupBox3.Controls.Add(this.txtID);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.txtmaHd);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Location = new System.Drawing.Point(31, 32);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(322, 190);
+            this.groupBox3.TabIndex = 15;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Thông Tin Chung";
+            // 
             // iconButton1
             // 
             this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -76,19 +95,50 @@
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.iconButton1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Share;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconSize = 20;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(617, 45);
+            this.iconButton1.Location = new System.Drawing.Point(165, 123);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(140, 50);
-            this.iconButton1.TabIndex = 15;
-            this.iconButton1.Text = "Thêm Hóa Đơn";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.Size = new System.Drawing.Size(87, 50);
+            this.iconButton1.TabIndex = 13;
+            this.iconButton1.Text = "OK";
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(108, 29);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(102, 22);
+            this.txtID.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 17);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "ID Nhan Vien";
+            // 
+            // txtmaHd
+            // 
+            this.txtmaHd.Location = new System.Drawing.Point(108, 62);
+            this.txtmaHd.Name = "txtmaHd";
+            this.txtmaHd.Size = new System.Drawing.Size(102, 22);
+            this.txtmaHd.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 17);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Mã Hóa Đơn";
             // 
             // buttonhuyhd
             // 
@@ -183,6 +233,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.buttonnhaphd);
             this.groupBox2.Controls.Add(this.label2);
@@ -190,18 +241,24 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtmahang);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.txtmaHD);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Location = new System.Drawing.Point(31, 36);
+            this.groupBox2.Location = new System.Drawing.Point(359, 32);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(588, 192);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thanh Toán";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(151, 49);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.TabIndex = 12;
+            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(154, 143);
+            this.dateTimePicker1.Location = new System.Drawing.Point(154, 118);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(225, 22);
             this.dateTimePicker1.TabIndex = 11;
@@ -218,10 +275,10 @@
             this.buttonnhaphd.IconColor = System.Drawing.Color.White;
             this.buttonnhaphd.IconSize = 20;
             this.buttonnhaphd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonnhaphd.Location = new System.Drawing.Point(455, 140);
+            this.buttonnhaphd.Location = new System.Drawing.Point(418, 123);
             this.buttonnhaphd.Name = "buttonnhaphd";
             this.buttonnhaphd.Rotation = 0D;
-            this.buttonnhaphd.Size = new System.Drawing.Size(133, 50);
+            this.buttonnhaphd.Size = new System.Drawing.Size(152, 50);
             this.buttonnhaphd.TabIndex = 10;
             this.buttonnhaphd.Text = "Nhập";
             this.buttonnhaphd.UseVisualStyleBackColor = false;
@@ -230,7 +287,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 143);
+            this.label2.Location = new System.Drawing.Point(45, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 7;
@@ -238,7 +295,7 @@
             // 
             // txtsoluong
             // 
-            this.txtsoluong.Location = new System.Drawing.Point(154, 110);
+            this.txtsoluong.Location = new System.Drawing.Point(154, 74);
             this.txtsoluong.Name = "txtsoluong";
             this.txtsoluong.Size = new System.Drawing.Size(172, 22);
             this.txtsoluong.TabIndex = 6;
@@ -246,7 +303,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 110);
+            this.label1.Location = new System.Drawing.Point(45, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 5;
@@ -254,7 +311,7 @@
             // 
             // txtmahang
             // 
-            this.txtmahang.Location = new System.Drawing.Point(154, 78);
+            this.txtmahang.Location = new System.Drawing.Point(154, 34);
             this.txtmahang.Name = "txtmahang";
             this.txtmahang.Size = new System.Drawing.Size(172, 22);
             this.txtmahang.TabIndex = 3;
@@ -262,27 +319,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(45, 77);
+            this.label8.Location = new System.Drawing.Point(45, 34);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 17);
             this.label8.TabIndex = 2;
             this.label8.Text = "Mã hàng";
-            // 
-            // txtmaHD
-            // 
-            this.txtmaHD.Location = new System.Drawing.Point(154, 37);
-            this.txtmaHD.Name = "txtmaHD";
-            this.txtmaHD.Size = new System.Drawing.Size(172, 22);
-            this.txtmaHD.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(45, 42);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 17);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Mã Hóa Đơn";
             // 
             // laphoadon
             // 
@@ -294,6 +335,8 @@
             this.Text = "laphoadon";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -310,8 +353,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtmahang;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtmaHD;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -321,6 +362,12 @@
         private FontAwesome.Sharp.IconButton buttoninhoadon;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox3;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtmaHd;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -41,10 +41,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtpasss = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +51,6 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 22);
             this.txtId.TabIndex = 0;
-//            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtname
             // 
@@ -161,45 +156,9 @@
             this.radioButton2.Text = "Nữ";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(38, 151);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 17);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "USER NAME";
-            // 
-            // txtusername
-            // 
-            this.txtusername.Location = new System.Drawing.Point(127, 146);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(192, 22);
-            this.txtusername.TabIndex = 16;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(38, 198);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(92, 17);
-            this.label15.TabIndex = 17;
-            this.label15.Text = "PASS WORD";
-            // 
-            // txtpasss
-            // 
-            this.txtpasss.Location = new System.Drawing.Point(127, 193);
-            this.txtpasss.Name = "txtpasss";
-            this.txtpasss.Size = new System.Drawing.Size(192, 22);
-            this.txtpasss.TabIndex = 18;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
-            this.groupBox1.Controls.Add(this.txtpasss);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.txtusername);
-            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -252,10 +211,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtusername;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtpasss;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }

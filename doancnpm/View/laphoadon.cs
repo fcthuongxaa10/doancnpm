@@ -18,6 +18,7 @@ namespace doancnpm
         {
             IDnv1 = s;
             InitializeComponent();
+            txtID.Text = IDnv1.ToString();
         }
 
         public int IDnv1 { get => IDnv; set => IDnv = value; }
@@ -25,40 +26,73 @@ namespace doancnpm
         private void buttonnhaphd_Click(object sender, EventArgs e)
         {
             Model1 db = new Model1();
-            string MHDd=txtmaHD.Text;
+            string MHDd = txtmaHd.Text;
             string mahang = txtmahang.Text;
             int soLuong =Convert.ToInt32(txtsoluong.Text);
-            string ten = "";
+            string ten ="";
             int gia;
             int thanhtien;
+            var li = db.Accounts.Where(p => p.IDuser == IDnv1).FirstOrDefault();
+            int idacc = li.ID;
             ChiTietHoaDon ct = new ChiTietHoaDon()
             {
-                MaHD = MHDd,  
+                MaHD =MHDd ,  
                 MaHang = mahang,
                 SoLuong = soLuong.ToString(),
             };
             db.ChiTietHoaDons.Add(ct);
             db.SaveChanges();
-            var li = db.MatHangs.Where(p => p.MaHang == mahang).FirstOrDefault();
+            var li1 = db.MatHangs.Where(p => p.MaHang == mahang).FirstOrDefault();
             {
-                ten = li.TenHang;
-                gia = Convert.ToInt32(li.Gia);
+                ten = li1.TenHang;
+                gia = Convert.ToInt32(li1.Gia);
             };
             thanhtien = gia * soLuong;
-            var li2 = db.ChiTietHoaDons.Where(p => p.HoaDonBanHang.MaHD ==MHDd).
-                Select(p => new { p.MaHD, p.MaHang, ten, gia, p.SoLuong});
+            var li2 = db.ChiTietHoaDons.Where(p => p.MaHang==mahang && p.MaHD==MHDd).
+               Select(p => new { p.MaHD, p.MaHang, ten, gia, p.SoLuong});
             dataGridView1.DataSource = li2.ToList();
         }
      
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            ThemHD f = new ThemHD(IDnv1);
-            f.ShowDialog();
-        }
 
         private void butttontongtien_Click(object sender, EventArgs e)
         {
+            Model1 db = new Model1();
+           
 
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string Mhd = txtmaHd.Text;
+            Model1 db = new Model1();
+            var mahd = db.HoaDonBanHangs.Where(p => p.MaHD == Mhd).FirstOrDefault();
+                if(mahd==null)
+            {
+                var li = db.Accounts.Where(p => p.IDuser == IDnv1).FirstOrDefault();
+                int idacc = li.ID;
+                HoaDonBanHang h = new HoaDonBanHang()
+                {
+                    MaHD = txtmaHd.Text,
+                    IDNV = idacc,
+                    TongTien = 0,
+                    NgayLapHD = DateTime.Now,
+                };
+                db.HoaDonBanHangs.Add(h);
+                db.SaveChanges();
+                MessageBox.Show("OK");
+            }
+                else
+            {
+                MessageBox.Show("Ma hoa don da ton tai");
+            }
+            
+           
+        }
+        public string MaHD(string mhd)
+        {
+            Model1 db = new Model1();
+            var li = db.HoaDonBanHangs.Where(p => p.MaHD == mhd).FirstOrDefault();
+            return mhd;
         }
     }
 }

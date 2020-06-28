@@ -32,12 +32,12 @@
             this.buttonlhd = new FontAwesome.Sharp.IconButton();
             this.buttonthongtincanhannv = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonhome = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.buttondangxuat = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -107,8 +107,18 @@
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Location = new System.Drawing.Point(181, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(736, 107);
+            this.panel2.Size = new System.Drawing.Size(832, 107);
             this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(416, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 32);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "label1";
             // 
             // buttonhome
             // 
@@ -154,7 +164,7 @@
             this.buttondangxuat.IconColor = System.Drawing.Color.White;
             this.buttondangxuat.IconSize = 50;
             this.buttondangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttondangxuat.Location = new System.Drawing.Point(923, 3);
+            this.buttondangxuat.Location = new System.Drawing.Point(1019, 3);
             this.buttondangxuat.Name = "buttondangxuat";
             this.buttondangxuat.Rotation = 0D;
             this.buttondangxuat.Size = new System.Drawing.Size(149, 50);
@@ -162,6 +172,7 @@
             this.buttondangxuat.Text = "Đăng Xuất";
             this.buttondangxuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttondangxuat.UseVisualStyleBackColor = false;
+            this.buttondangxuat.Click += new System.EventHandler(this.buttondangxuat_Click);
             // 
             // panel3
             // 
@@ -181,16 +192,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(416, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 32);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "label1";
             // 
             // NhanVien2
             // 

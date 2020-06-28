@@ -23,45 +23,34 @@ namespace doancnpm
         {
             InitializeComponent();
             Id = s;
-            EditOrAdd();
+            if(Id!=0)
+            {
+                EditOrAdd(Id);
+            }
         }
 
 
-        public void EditOrAdd()
+        public void EditOrAdd(int id)
         {
-            Model1 db = new Model1();
-            if (Id == 0)
+            USER s = new USER();
+            s = BLL.QuanLiNhanVien_BLL.Instance.Getusser(id);
+            txtID.Text = s.ID.ToString();
+            txttenNv.Text = s.HoTen;
+            txtDiaChi.Text = s.Diachi;
+            txtSDT.Text = s.SDT;
+            txtLuong.Text =s.LuongCB.ToString();
+            txtngaylam.Text = s.SoNgayLam.ToString();
+            txttienthuong.Text = s.SoTienThuong.ToString();
+            txttienphat.Text = s.SoTienPhat.ToString();
+            if(s.GioiTinh==true)
             {
-
+                radioButton1.Checked = true;
             }
             else
             {
-                foreach (USER i in db.USERs)
-                {
-                    if (i.ID == Id)
-                    {
-                        var li = db.USERs.Where(p => p.ID == Id).FirstOrDefault();
-                        txtID.Text = (li.ID).ToString();
-                        txttenNv.Text = li.HoTen;
-                        txtDiaChi.Text = li.Diachi;
-                        txtSDT.Text = li.SDT;
-                        txtLuong.Text = li.LuongCB.ToString();
-                        txtngaylam.Text = (li.SoNgayLam).ToString();
-                        txttienthuong.Text = li.SoTienThuong.ToString();
-                        txttienphat.Text = li.SoTienPhat.ToString();
-                        if (i.GioiTinh)
-                        {
-                            radioButton1.Checked = true;
-                        }
-                        else
-                        {
-                            radioButton2.Checked = true;
-                        }
-                        dateTimePicker1.Value = li.NgaySinh;
-                    }
-                }
+                radioButton2.Checked = true;
             }
-
+            dateTimePicker1.Value = s.NgaySinh;
         }
 
         private void buttonaddnv_Click(object sender, EventArgs e)
@@ -73,13 +62,12 @@ namespace doancnpm
             else
             {
                 Model1 DB = new Model1();
-                if(Id==0)
+                if (Id == 0)
                 {
                     try
                     {
                         USER s = new USER()
                         {
-                            ID = Convert.ToInt32(txtID.Text),
                             HoTen = txttenNv.Text,
                             Diachi = txtDiaChi.Text,
                             SDT = txtSDT.Text,
@@ -92,7 +80,7 @@ namespace doancnpm
                         };
                         DB.USERs.Add(s);
                         DB.SaveChanges();
-                       // var li1 = DB.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
+
                         MessageBox.Show("Thêm Thành Công");
                     }
                     catch (Exception)
@@ -119,8 +107,8 @@ namespace doancnpm
                         }
                         DB.SaveChanges();
                         var li1 = DB.USERs.Select(p => new { p.ID, p.HoTen, p.LuongCB, p.NgaySinh, p.SDT, p.GioiTinh, p.SoNgayLam, p.SoTienThuong, p.SoTienPhat, p.Diachi });
-                        MessageBox.Show("OK");                 
-                            }
+                        MessageBox.Show("OK");
+                    }
                     catch (Exception)
                     {
 
@@ -128,12 +116,43 @@ namespace doancnpm
                     }
                 }
             }
+
             D();
         }
 
         private void buttoncancer_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public USER add()
+        {
+            USER s = new USER();
+            s.ID = Convert.ToInt32(txtID.Text);
+            s.HoTen = txttenNv.Text;
+            s.Diachi = txtDiaChi.Text;
+            s.SDT = txtSDT.Text;
+            s.LuongCB = Convert.ToDecimal(txtLuong.Text);
+            s.SoNgayLam = Convert.ToInt32(txtngaylam.Text);
+            s.SoTienThuong = Convert.ToDecimal(txttienthuong.Text);
+            s.SoTienPhat = Convert.ToDecimal(txttienphat.Text);
+            s.NgaySinh = Convert.ToDateTime(dateTimePicker1.Value.ToString());
+            s.GioiTinh = radioButton1.Checked;
+            return s;
+        }
+        public USER update(int ID)
+        {
+            USER s = new USER();
+            s.ID = Convert.ToInt32(txtID.Text);
+            s.HoTen = txttenNv.Text;
+            s.Diachi = txtDiaChi.Text;
+            s.SDT = txtSDT.Text;
+            s.LuongCB = Convert.ToDecimal(txtLuong.Text);
+            s.SoNgayLam = Convert.ToInt32(txtngaylam.Text);
+            s.SoTienThuong = Convert.ToDecimal(txttienthuong.Text);
+            s.SoTienPhat = Convert.ToDecimal(txttienphat.Text);
+            s.NgaySinh = Convert.ToDateTime(dateTimePicker1.Value.ToString());
+            s.GioiTinh = radioButton1.Checked;
+            return s;
         }
     }
 }

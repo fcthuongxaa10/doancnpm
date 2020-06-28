@@ -28,138 +28,170 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonsearchhang = new FontAwesome.Sharp.IconButton();
-            this.buttonupdatehang = new FontAwesome.Sharp.IconButton();
-            this.buttondelehang = new FontAwesome.Sharp.IconButton();
-            this.buttonaddhang = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.buttonsearchacc = new FontAwesome.Sharp.IconButton();
+            this.buttonupdateacc = new FontAwesome.Sharp.IconButton();
+            this.buttondeleteacc = new FontAwesome.Sharp.IconButton();
+            this.buttonaddacc = new FontAwesome.Sharp.IconButton();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // panel1
             // 
-            this.textBox1.Location = new System.Drawing.Point(490, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 22);
-            this.textBox1.TabIndex = 13;
-            // 
-            // buttonsearchhang
-            // 
-            this.buttonsearchhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.buttonsearchhang.CausesValidation = false;
-            this.buttonsearchhang.FlatAppearance.BorderSize = 5;
-            this.buttonsearchhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonsearchhang.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.buttonsearchhang.ForeColor = System.Drawing.Color.White;
-            this.buttonsearchhang.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.buttonsearchhang.IconColor = System.Drawing.Color.White;
-            this.buttonsearchhang.IconSize = 20;
-            this.buttonsearchhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonsearchhang.Location = new System.Drawing.Point(721, 93);
-            this.buttonsearchhang.Name = "buttonsearchhang";
-            this.buttonsearchhang.Rotation = 0D;
-            this.buttonsearchhang.Size = new System.Drawing.Size(133, 32);
-            this.buttonsearchhang.TabIndex = 12;
-            this.buttonsearchhang.Text = "SEARCH";
-            this.buttonsearchhang.UseVisualStyleBackColor = false;
-            // 
-            // buttonupdatehang
-            // 
-            this.buttonupdatehang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.buttonupdatehang.CausesValidation = false;
-            this.buttonupdatehang.FlatAppearance.BorderSize = 5;
-            this.buttonupdatehang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonupdatehang.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.buttonupdatehang.ForeColor = System.Drawing.Color.White;
-            this.buttonupdatehang.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.buttonupdatehang.IconColor = System.Drawing.Color.White;
-            this.buttonupdatehang.IconSize = 20;
-            this.buttonupdatehang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonupdatehang.Location = new System.Drawing.Point(721, 364);
-            this.buttonupdatehang.Name = "buttonupdatehang";
-            this.buttonupdatehang.Rotation = 0D;
-            this.buttonupdatehang.Size = new System.Drawing.Size(133, 50);
-            this.buttonupdatehang.TabIndex = 11;
-            this.buttonupdatehang.Text = "UPDATE";
-            this.buttonupdatehang.UseVisualStyleBackColor = false;
-            // 
-            // buttondelehang
-            // 
-            this.buttondelehang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.buttondelehang.CausesValidation = false;
-            this.buttondelehang.FlatAppearance.BorderSize = 5;
-            this.buttondelehang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttondelehang.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.buttondelehang.ForeColor = System.Drawing.Color.White;
-            this.buttondelehang.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.buttondelehang.IconColor = System.Drawing.Color.White;
-            this.buttondelehang.IconSize = 20;
-            this.buttondelehang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttondelehang.Location = new System.Drawing.Point(721, 272);
-            this.buttondelehang.Name = "buttondelehang";
-            this.buttondelehang.Rotation = 0D;
-            this.buttondelehang.Size = new System.Drawing.Size(133, 50);
-            this.buttondelehang.TabIndex = 10;
-            this.buttondelehang.Text = "DELETE";
-            this.buttondelehang.UseVisualStyleBackColor = false;
-            // 
-            // buttonaddhang
-            // 
-            this.buttonaddhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.buttonaddhang.CausesValidation = false;
-            this.buttonaddhang.FlatAppearance.BorderSize = 5;
-            this.buttonaddhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonaddhang.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.buttonaddhang.ForeColor = System.Drawing.Color.White;
-            this.buttonaddhang.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.buttonaddhang.IconColor = System.Drawing.Color.White;
-            this.buttonaddhang.IconSize = 20;
-            this.buttonaddhang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonaddhang.Location = new System.Drawing.Point(721, 180);
-            this.buttonaddhang.Name = "buttonaddhang";
-            this.buttonaddhang.Rotation = 0D;
-            this.buttonaddhang.Size = new System.Drawing.Size(133, 50);
-            this.buttonaddhang.TabIndex = 9;
-            this.buttonaddhang.Text = "ADD";
-            this.buttonaddhang.UseVisualStyleBackColor = false;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.txtSearch);
+            this.panel1.Controls.Add(this.buttonsearchacc);
+            this.panel1.Controls.Add(this.buttonupdateacc);
+            this.panel1.Controls.Add(this.buttondeleteacc);
+            this.panel1.Controls.Add(this.buttonaddacc);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(706, 514);
+            this.panel1.TabIndex = 1;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 139);
+            this.dataGridView1.Location = new System.Drawing.Point(42, 88);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(653, 275);
-            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.Size = new System.Drawing.Size(601, 395);
+            this.dataGridView1.TabIndex = 21;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(419, 55);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(140, 20);
+            this.txtSearch.TabIndex = 20;
+            // 
+            // buttonsearchacc
+            // 
+            this.buttonsearchacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.buttonsearchacc.CausesValidation = false;
+            this.buttonsearchacc.FlatAppearance.BorderSize = 0;
+            this.buttonsearchacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonsearchacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttonsearchacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttonsearchacc.ForeColor = System.Drawing.Color.White;
+            this.buttonsearchacc.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.buttonsearchacc.IconColor = System.Drawing.Color.White;
+            this.buttonsearchacc.IconSize = 15;
+            this.buttonsearchacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonsearchacc.Location = new System.Drawing.Point(563, 55);
+            this.buttonsearchacc.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonsearchacc.Name = "buttonsearchacc";
+            this.buttonsearchacc.Rotation = 0D;
+            this.buttonsearchacc.Size = new System.Drawing.Size(80, 20);
+            this.buttonsearchacc.TabIndex = 19;
+            this.buttonsearchacc.Text = "SEARCH";
+            this.buttonsearchacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonsearchacc.UseVisualStyleBackColor = false;
+            this.buttonsearchacc.Click += new System.EventHandler(this.buttonsearchacc_Click);
+            // 
+            // buttonupdateacc
+            // 
+            this.buttonupdateacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.buttonupdateacc.CausesValidation = false;
+            this.buttonupdateacc.FlatAppearance.BorderSize = 0;
+            this.buttonupdateacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonupdateacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttonupdateacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttonupdateacc.ForeColor = System.Drawing.Color.White;
+            this.buttonupdateacc.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            this.buttonupdateacc.IconColor = System.Drawing.Color.White;
+            this.buttonupdateacc.IconSize = 15;
+            this.buttonupdateacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonupdateacc.Location = new System.Drawing.Point(210, 49);
+            this.buttonupdateacc.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonupdateacc.Name = "buttonupdateacc";
+            this.buttonupdateacc.Rotation = 0D;
+            this.buttonupdateacc.Size = new System.Drawing.Size(80, 20);
+            this.buttonupdateacc.TabIndex = 18;
+            this.buttonupdateacc.Text = "UPDATE";
+            this.buttonupdateacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonupdateacc.UseVisualStyleBackColor = false;
+            this.buttonupdateacc.Click += new System.EventHandler(this.buttonupdateacc_Click);
+            // 
+            // buttondeleteacc
+            // 
+            this.buttondeleteacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.buttondeleteacc.CausesValidation = false;
+            this.buttondeleteacc.FlatAppearance.BorderSize = 0;
+            this.buttondeleteacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttondeleteacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttondeleteacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttondeleteacc.ForeColor = System.Drawing.Color.White;
+            this.buttondeleteacc.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.buttondeleteacc.IconColor = System.Drawing.Color.White;
+            this.buttondeleteacc.IconSize = 15;
+            this.buttondeleteacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttondeleteacc.Location = new System.Drawing.Point(126, 49);
+            this.buttondeleteacc.Margin = new System.Windows.Forms.Padding(2);
+            this.buttondeleteacc.Name = "buttondeleteacc";
+            this.buttondeleteacc.Rotation = 0D;
+            this.buttondeleteacc.Size = new System.Drawing.Size(80, 20);
+            this.buttondeleteacc.TabIndex = 17;
+            this.buttondeleteacc.Text = "DELETE";
+            this.buttondeleteacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttondeleteacc.UseVisualStyleBackColor = false;
+            this.buttondeleteacc.Click += new System.EventHandler(this.buttondeleteacc_Click);
+            // 
+            // buttonaddacc
+            // 
+            this.buttonaddacc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.buttonaddacc.CausesValidation = false;
+            this.buttonaddacc.FlatAppearance.BorderSize = 0;
+            this.buttonaddacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonaddacc.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.buttonaddacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttonaddacc.ForeColor = System.Drawing.Color.White;
+            this.buttonaddacc.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.buttonaddacc.IconColor = System.Drawing.Color.White;
+            this.buttonaddacc.IconSize = 15;
+            this.buttonaddacc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonaddacc.Location = new System.Drawing.Point(42, 49);
+            this.buttonaddacc.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonaddacc.Name = "buttonaddacc";
+            this.buttonaddacc.Rotation = 0D;
+            this.buttonaddacc.Size = new System.Drawing.Size(80, 20);
+            this.buttonaddacc.TabIndex = 16;
+            this.buttonaddacc.Text = "ADD";
+            this.buttonaddacc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonaddacc.UseVisualStyleBackColor = false;
+            this.buttonaddacc.Click += new System.EventHandler(this.buttonaddacc_Click);
             // 
             // HangHoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1056, 755);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.buttonsearchhang);
-            this.Controls.Add(this.buttonupdatehang);
-            this.Controls.Add(this.buttondelehang);
-            this.Controls.Add(this.buttonaddhang);
+            this.ClientSize = new System.Drawing.Size(706, 514);
+            this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HangHoa";
             this.Text = "HangHoa";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private FontAwesome.Sharp.IconButton buttonaddhang;
-        private FontAwesome.Sharp.IconButton buttondelehang;
-        private FontAwesome.Sharp.IconButton buttonupdatehang;
-        private FontAwesome.Sharp.IconButton buttonsearchhang;
-        private System.Windows.Forms.TextBox textBox1;
+
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtSearch;
+        private FontAwesome.Sharp.IconButton buttonsearchacc;
+        private FontAwesome.Sharp.IconButton buttonupdateacc;
+        private FontAwesome.Sharp.IconButton buttondeleteacc;
+        private FontAwesome.Sharp.IconButton buttonaddacc;
     }
 }
