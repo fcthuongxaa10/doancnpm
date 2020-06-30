@@ -70,5 +70,10 @@ namespace doancnpm
         {
             this.Show();
         }
+
+        private void dangnhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
